@@ -1,0 +1,191 @@
+
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v18-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+}
+  /* open-sans-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v18-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+}
+  /* open-sans-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+}
+  /* open-sans-800 - latin_cyrillic */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/open-sans-v18-latin_cyrillic-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-800.woff') format('woff'), /* Modern Browsers */
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    
+}
+img {
+    max-width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 0 0 0 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    height: 70px;
+    width: 315px;
+    background-color: transparent;
+    border: 1px solid #9D5CD0;
+    border-radius: 100px;
+    color: #FFFFFF;
+}
+
+/* header style */
+.header__container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    background-color: #000000;
+    color: white;
+}
+
+.header__nav {
+    width: 895px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+
+.header__enter {
+    margin-left: auto;
+}
+
+/* hero style */
+
+.hero {
+    height: 800px;
+    max-width: 100%;
+    background: url(/images/birmingham-museums-trust-MK_98NuC4-4-unsplash2.jpg) center/cover no-repeat;
+}
+
+
+.hero__menu {
+    height: 70px;
+    display: flex;
+    background-color: rgba(0, 0, 0, .4);
+}
+.menu__link {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.menu__item {
+    display: flex;
+    align-items: center;
+}
+.menu__item:not(:last-child) {
+    margin-right: 100px;
+}
+.menu__rectangle {
+    width: 7px;
+    height: 7px;
+
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+}
+.hero__search {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+}
+.hero__input {
+    width: 200px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.hero__input::placeholder {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.hero__header {
+    width: 35%;
+    font-weight: 800;
+    margin-top: 90px;
+    font-size: 72px;
+}
+.hero__description {
+margin-top: 25px;
+width: 35%;
+line-height: 30px;
+}
+.hero__btn {
+    margin-top: 100px;
+    background-color: #9D5CD0;
+}
+
+/* US */
+
+.us {
+    color: black;
+}
+.us__header {
+    margin-top: 100px;
+    font-size: 48px;
+}
+.us__description {
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 32px;
+    width: 67.7%;
+}
