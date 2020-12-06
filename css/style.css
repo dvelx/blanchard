@@ -189,3 +189,165 @@ line-height: 30px;
     line-height: 32px;
     width: 67.7%;
 }
+
+
+/* GALERY */
+
+.galery {
+    margin-top: 80px;
+    background: url('/images/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png') center/cover no-repeat;
+    width: 100%;
+    height: 995px;
+    padding-top: 100px;
+}
+.galery__container {
+    display: flex;
+}
+.galery__header {
+    width: 26%;
+}
+.galery__header h3 {
+    margin-top: 40px;
+}
+.galery__head {
+    font-size: 48px;
+}
+.galery__slider {
+    margin-left: 50px;
+}
+.galery__info {
+    margin-top: 485px;
+}
+.galery__select {
+    margin-top: 20px;
+    color: #FFFFFF;
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+}
+.galery__rowItem {
+    display: flex;
+    justify-content: space-between;
+}
+.galery__rowItem:not(:last-child) {
+    margin-bottom: 50px;
+}
+.galery__item:not(:nth-child(3n+3)) {
+    margin-right: 50px;
+}
+
+
+.swiper-btns{
+    display: flex;
+    flex-flow: row wrap;
+    width: 130px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    position: static;
+    top: 0%;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    background-color: #666666;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
+
+.swiper-button-prev{
+    background: url('/images/prev.svg') center no-repeat;
+}
+
+.swiper-button-next{
+    background: url('/images/next.svg') center no-repeat;
+}
+
+
+.swiper-pagination{
+    top: 15px;
+    left: 50px;
+    text-align: left;
+    color: white;
+}
+
+
+/* CATALOG */
+
+.catalog {
+    margin-top: 100px;
+    color: black;
+}
+.heading__block {
+    display: flex;
+}
+.heading {
+    font-size: 48px;
+}
+.heading__country {
+    margin-left: 45px;
+    display: flex;
+    
+}
+.heading__country img:not(:last-child) {
+    margin-right: 50px;
+}
+
+.catalog__description {
+    width: 69%;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 32px;
+}
+.catalog__accordionBlock {
+    display: flex;
+    margin-top: 50px;
+}
+.catalog__itemSelect {
+max-width: 750px;
+margin-right: 50px;
+
+}
+
+.catalog__accordion {
+    min-width: 800px;
+}
+.accordion__item {
+    width: 100%;
+    height: 60px;
+    display: flex !important;
+    align-items: center !important;
+    background-color: white !important;
+    color: black !important;
+}
+.accordion__item a {
+    color: black !important;
+}
+
+.accordion__img {
+    margin-left: auto;
+}
+.accordion__description {
+    line-height: 32px;
+    font-size: 16px;
+}
+.accordion__description-block {
+    display: flex;
+    margin-right: 100px;
+}
+.accordion__description-block p:not(:last-child) {
+    margin-right: 50px;
+}
+.item_linkName {
+    font-size: 24px;
+}
