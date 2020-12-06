@@ -316,7 +316,17 @@ line-height: 30px;
 .catalog__itemSelect {
 max-width: 750px;
 margin-right: 50px;
-
+}
+.catalog__itemName {
+    font-size: 24px;
+    margin-top: 40px;
+}
+.catalog__itemDescription {
+    margin-top: 15px;
+    line-height: 32px;
+}
+.catalog__itemDescription span {
+    color: #999999;
 }
 
 .catalog__accordion {
@@ -350,4 +360,179 @@ margin-right: 50px;
 }
 .item_linkName {
     font-size: 24px;
+}
+
+/* EVENT */
+
+.event {
+    margin-top: 100px;
+    color: black;
+}
+.event__heading {
+    font-size: 48px;
+}
+.event__itemRow {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.event__item {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 700px;
+    border: 1px solid #CACACA;
+}
+
+.event__item span {
+    margin-top: 15px;
+    margin-left: auto;
+    font-size: 12px;
+    text-align: right;
+    color: #999999;
+    padding-right: 20px;
+    width: 200px;
+}
+.event__itemWrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 42px 50px 50px;
+}
+.event__itemWrap h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+.event__itemWrap p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 32px;
+}
+.event__itemWrap a {
+    color: black;
+    margin-top: auto;
+}
+.event__btnBlock {
+    display: flex;
+    justify-content: center;
+}
+.event__btn {
+    width: 190px;
+    height: 60px;
+    font-size: 18px;
+    color: #9D5CD0;
+    margin: 50px auto 0 auto;
+}
+
+
+/* PUBLICATION */
+
+.publication {
+    margin-top: 80px;
+    width: 100%;
+    height: 766px;
+    background: url('/images/birmingham-museums-trust-MK_98NuC4-4-unsplash4.png') center/cover no-repeat;
+}
+.publication__container {
+    display: flex;
+}
+.publication__heading {
+    margin-top: 100px;
+    font-size: 48px;
+} 
+.publication__firstCol {
+    width: 26%;
+}
+
+/* checkbox */
+
+.checkbox__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.label1,
+.label2,
+.label3,
+.label4,
+.label5,
+.label6,
+.label7,
+.label8,
+.label9,
+.label10,
+.label11,
+.label12 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#check1,
+#check2,
+#check3,
+#check4,
+#check5,
+#check6,
+#check7,
+#check8,
+#check9,
+#check10,
+#check11,
+#check12 {
+    display: none;
+}
+.checbox-span {
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFFFFF;
+    transition: opacity, border .3s ease-in-out;
+}
+
+.checbox-span::before {
+    content: '\25CF';
+    font-size: 15px;
+    color: #9D5CD0;
+    position: absolute;
+    text-align: center;
+    vertical-align: top;
+    width: 13px;
+    height: 13px;
+    top: -1px;
+    left: -1px;
+    opacity: 0;
+    border: 1px solid #9D5CD0;
+    
+}
+#check1:checked + .checbox-span::before,
+#check2:checked + .checbox-span::before,
+#check3:checked + .checbox-span::before,
+#check4:checked + .checbox-span::before,
+#check5:checked + .checbox-span::before,
+#check6:checked + .checbox-span::before,
+#check7:checked + .checbox-span::before,
+#check8:checked + .checbox-span::before,
+#check9:checked + .checbox-span::before,
+#check10:checked + .checbox-span::before,
+#check11:checked + .checbox-span::before,
+#check12:checked + .checbox-span::before {
+    opacity: 1;
+}
+/* /////// */
+
+.slide-content {
+    display: flex;
+    /* justify-content: space-between; */
+}
+/* .swiper-slide {
+    width: 100% !important;
+} */
+.content__itemDescription {
+    display: flex;
+    justify-content: space-between;
 }
