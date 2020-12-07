@@ -1,5 +1,15 @@
+var hero_swiper = new Swiper('#hero_swiper', {
+    slidesPerView: 1,
 
-var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+});
+
+
+
+var galery_swiper = new Swiper('#galery_swiper', {
     // Optional parameters 
 
     slideClass: ('swiper-slide'),
@@ -10,6 +20,40 @@ var mySwiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+        },
+   
+    speed: 600,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
+var publication_swiper = new Swiper('#publication_swiper', {
+    // Optional parameters 
+
+    slideClass: ('swiper-slide'),
+    
+    slidesPerView: 1,
+    slidesPercolumn: 2,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
     },
 
     pagination: {

@@ -1,3 +1,5 @@
+
+  
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -18,6 +20,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script defer src="/js/swiper-main.js"></script>
     <script defer src="/js/accordion-main.js"></script>
+    <script defer src="/js/main.js"></script>
 </head>
 <body>
     <header class="header">
@@ -54,18 +57,17 @@
                     <path d="M123.803 22C127.466 22 130.132 20.3801 131.114 17.6339L131.426 17.7111C130.833 20.7041 131.457 22 135.043 22C135.495 22 135.947 21.9537 136.321 21.892L136.851 19.223L136.072 19.2076C135.214 19.1921 134.965 18.9916 134.965 17.8962V10.4755C134.965 6.80365 132.502 5.04488 127.248 5.04488C121.667 5.04488 118.845 7.2202 119.079 10.9846L123.553 11.3548C123.366 8.87097 124.644 7.74474 127.154 7.74474C129.399 7.74474 130.459 8.56241 130.459 10.4292V11.3394L126.032 12.1417C121.604 12.9593 118.673 14.3478 118.673 17.7419V17.7882C118.673 20.4727 120.513 22 123.803 22ZM125.611 19.007C124.083 19.007 123.257 18.467 123.257 17.3562V17.3254C123.257 15.7363 124.707 15.0884 127.575 14.533L130.459 13.9776V14.7335C130.459 17.2174 128.199 19.007 125.611 19.007Z" fill="white"/>
                     <path d="M140.669 21.5989H145.205V14.8261C145.205 10.5989 146.53 9.04067 149.991 8.79383L152.221 8.62412L151.691 4.8906C148.027 5.1683 146.328 6.30996 144.644 9.67321L144.348 9.53436C145.081 7.37447 145.252 6.51052 145.221 5.39972H140.669V21.5989Z" fill="white"/>
                     <path d="M162.243 21.892C165.61 21.892 167.809 20.3492 168.915 17.5568L169.243 17.6648C168.713 19.3619 168.432 20.7041 168.417 21.5989H173V0H168.463V4.39691C168.463 6.09397 168.697 7.46704 169.258 9.3338L168.947 9.45722C167.84 6.68022 165.626 5.07574 162.243 5.07574C157.566 5.07574 155.103 7.89902 155.103 13.2987V13.6844C155.103 19.0687 157.566 21.892 162.243 21.892ZM163.958 19.115C161.152 19.115 159.686 17.3408 159.686 13.8387V13.129C159.686 9.6115 161.152 7.82188 163.958 7.82188C166.889 7.82188 168.463 9.70407 168.463 13.2062V13.7616C168.463 17.2482 166.889 19.115 163.958 19.115Z" fill="white"/>
-                    </svg>
-                    
+                </svg>   
             </div>
         
             <nav class="header__nav">
-                <a href="#">О нас</a>
-                <a href="#">Галерея</a>
-                <a href="#">Каталог</a>
-                <a href="#">События</a>
-                <a href="#">Издания</a>
-                <a href="#">Проекты</a>
-                <a href="#">Контакты</a>
+                <a href="index.html">О нас</a>
+                <a href="index.html">Галерея</a>
+                <a href="index.html">Каталог</a>
+                <a href="index.html">События</a>
+                <a href="index.html">Издания</a>
+                <a href="index.html">Проекты</a>
+                <a href="index.html">Контакты</a>
             </nav>
             <div class="header__enter">
                 <a href="#">
@@ -79,6 +81,13 @@
     </header>
 
     <main>
+        <div class="swiper-container hero__swiper-background" id="hero_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero__slide-background bg1"></div>
+                <div class="swiper-slide hero__slide-background bg2"></div>
+                <div class="swiper-slide hero__slide-background bg3"></div>
+            </div>
+        </div>
         <section class="hero">
             <div class="hero__menu">
                 <div class="menu__link">
@@ -143,7 +152,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="galery__slider swiper-container">
+                <div class="galery__slider swiper-container" id="galery_swiper">
                     <div class="swiper-btns">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-prev"></div>
@@ -464,8 +473,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="event__itemRow-all" id="close">
+                    <div class="event__item">
+                        <img src="/images/eventImage4.png" alt="">
+                        <span>Третьяковка на Крымском валу <br> с 30 марта по 30 апреля</span>
+                        <div class="event__itemWrap">
+                            <h3>XXIV Международная биеннале молодого искусства</h3>
+                            <p>Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="event__item">
+                        <img src="/images/eventImage5.png" alt="">
+                        <span>ММАМ <br> с 8 апреля по 20 мая</span>
+                        <div class="event__itemWrap">
+                            <h3>Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                            <p>Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+                            <a href="">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="event__btnBlock">
-                    <button class="btn event__btn">
+                    <button class="btn event__btn" id="open">
                         Все события
                     </button>
                 </div>
@@ -541,15 +570,25 @@
                             <span class="checbox-span"></span>
                         </label>
                     </div>
+                    <div class="publication__price">
+                        <span>Цена</span>
+                        <div class="publication__form">
+                            <label for="input-1">от</label>
+                            <input type="number" name="text" id="input-1" placeholder="50" class="input-1">
+                            <label for="input-2">до</label>
+                            <input type="number" name="tetx" id="input-2" placeholder="25000" class="input-2">
+                            <label for="input-2">рублей</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="publication__secondCol">
-                    <div class="publication__slider swiper-container">
+                    <div class="publication__slider swiper-container" id="publication_swiper">
                         <div class="swiper-btns">
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper publication-slider-wrapper">
                             <div class="swiper-slide">
                                 <div class="slide-content">
                                     <div class="content-item">
