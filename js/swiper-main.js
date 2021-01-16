@@ -69,5 +69,35 @@ var publication_swiper = new Swiper('#publication_swiper', {
     },
 
 });
+var project_swiper = new Swiper('#project_swiper', {
+    // Optional parameters 
+
+    slideClass: ('swiper-slide'),
+    
+    slidesPerView: 3,
+    slidesPercolumn: 1,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+        },
+   
+    speed: 600,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
 
                 
