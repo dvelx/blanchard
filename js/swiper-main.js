@@ -68,7 +68,7 @@ var project_swiper = new Swiper('#project_swiper', {
     
     slidesPerView: 3,
     slidesPercolumn: 1,
-    spaceBetween: 0,
+    spaceBetween: 40,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
