@@ -765,10 +765,10 @@ margin-right: 50px;
 .swiper-btns-project-prev {
     display: block;
 }   
-.slide-content {
+/* .slide-content {
     width: 450px;
     height: 150px;
-}
+} */
 .swiper-btns-project-next {
 
 }
