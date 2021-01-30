@@ -741,11 +741,15 @@ margin-right: 50px;
 .project__link {
     color: #9D5CD0;
 }
-.project__partnersSwiper {
+
+.project__swiper-btn {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    justify-content: center;
+    margin-top: 23px;
 }
+
+
 .project__item {
     display: block;
     position: relative;
@@ -763,7 +767,8 @@ margin-right: 50px;
   
   .swiper-container#project-swiper {
     width: 1450px;
-    height: 230px;
+    height:150px;
+    align-items: center;
   }
   
   .projects1 {
@@ -806,18 +811,14 @@ margin-right: 50px;
     background-image: url(../images/project-8.png);
   }
   
-  /* .projects__swiper-btn.swiper-button {
-    position: relative;
-  } */
   
-  .swiper-button-prev.swiper-button-prev-st.button3-prev,
-  .swiper-button-next.swiper-button-next-st.button3-next {
-    /* position: absolute; */
-    /* top: 105px; */
+  
+.button3-prev,
+.button3-next {
     background: #ececec;
   }
   
-  .swiper-button-prev.swiper-button-prev-st.button3-prev::after,
+  /* .swiper-button-prev.swiper-button-prev-st.button3-prev::after,
   .swiper-button-next.swiper-button-next-st.button3-next::after {
     color: #000000;
   }
@@ -828,7 +829,7 @@ margin-right: 50px;
   
   .swiper-button-prev.swiper-button-prev-st.button3-prev {
     left: 13px;
-  }
+  } */
 
 
   /* contacts */
@@ -848,6 +849,10 @@ margin-right: 50px;
     position: relative;
 }
 
+
+.forma {
+    margin-top: 36px;
+}
 .form-text {
     color: black;
     margin-top: 135px;
@@ -860,7 +865,9 @@ margin-right: 50px;
     margin-top: 20px;
     font-size: 16px;
 }
-.form-action {
+.form-header {
+    margin-top: 36px;
+    color: black;
     font-size: 24px;
     margin-top: 55px;
 }
@@ -882,6 +889,7 @@ margin-right: 50px;
 }
 
 .contacts__input {
+    font-size: 16px;
     height: 40px;
     width: 400px;
     padding-left: 30px;
@@ -890,6 +898,26 @@ margin-right: 50px;
     border-radius: 100px;
 }
 
+.contact__social-header {
+    color: black;
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+.contact__social-icon {
+    margin-top: 18px;
+    margin-bottom: 124px;
+}
+
+.contact__social-icon img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
 [class*="ground-pane"] {
     filter: grayscale(1);
 }
@@ -897,4 +925,23 @@ margin-right: 50px;
 .contacts_map {
     position: absolute;
     right: 0;
+}
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: #000000;
+}
+
+.footer___container {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+
+.footer__social img {
+    margin-left: 20px;
 }

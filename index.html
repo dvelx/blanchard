@@ -783,24 +783,21 @@
                     <h3 class="project__partnerHeader">Партнеры проектов:</h3>
                     <div class="project__sliderBlock">
                         <div class="project__swiper-btn swiper-button">
-                            <div class="swiper-button-prev swiper-button-prev-st button3-prev"></div>
-                            <div class="swiper-pagination swiper-pagination-st pagination3"></div>
-                            <div class="swiper-button-next swiper-button-next-st button3-next"></div>
-        
-                        </div>
-        
-                        <div class="projects__swiper swiper-container" id="project-swiper">
-                            <div class="project__slider swiper-wrapper">
-                                <div class="swiper-slide project__item projects1"></div>
-                                <div class="swiper-slide project__item projects2"></div>
-                                <div class="swiper-slide project__item projects3"></div>
-                                <div class="swiper-slide project__item projects4"></div>
-                                <div class="swiper-slide project__item projects5"></div>
-                                <div class="swiper-slide project__item projects6"></div>
-                                <div class="swiper-slide project__item projects7"></div>
-                                <div class="swiper-slide project__item projects8"></div>
-                                <div class="swiper-slide project__item projects9"></div>
+                            <div class="swiper-button-prev button3-prev"></div>
+                            <div class="projects__swiper swiper-container" id="project-swiper">
+                                <div class="project__slider swiper-wrapper">
+                                    <div class="swiper-slide project__item projects1"></div>
+                                    <div class="swiper-slide project__item projects2"></div>
+                                    <div class="swiper-slide project__item projects3"></div>
+                                    <div class="swiper-slide project__item projects4"></div>
+                                    <div class="swiper-slide project__item projects5"></div>
+                                    <div class="swiper-slide project__item projects6"></div>
+                                    <div class="swiper-slide project__item projects7"></div>
+                                    <div class="swiper-slide project__item projects8"></div>
+                                    <div class="swiper-slide project__item projects9"></div>
+                                </div>
                             </div>
+                            <div class="swiper-button-next button3-next"></div>
                         </div>
                     </div>
                 </div>
@@ -819,15 +816,20 @@
                         <div class="form-text">
                             <h3 class="form-name">Шоурум №4</h3>
                             <h3 class="form-adress">Леонтьевский переулок, дом 5, строение 1</h3>
-                            <h3 class="form-action">Заказать обратный звонок</h3>
                         </div>
-                        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST" class="form">
-                            <input type="text" name="name" placeholder="Имя*" class="contacts__input" data-validate-field="name">
-                            <input type="tel" name="tel" placeholder="Телефон*" class="contacts__input" data-validate-field="tel" data-validate-field="phone">
-                            <button class="btn contacts__btn">
-                                Заказать
-                            </button>
-                        </form>
+                        <div class="forma">
+                            <label for="contacts-form" class="form-header">
+                                Заказать обратный звонок
+                                <form id="contacts-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST" class="form">
+                                    <input type="text" name="name" placeholder="Имя*" class="contacts__input" data-validate-field="name">
+                                    <input type="tel" name="tel" placeholder="Телефон*" class="contacts__input" data-validate-field="tel" data-validate-field="phone">
+                            
+                                <button class="btn contacts__btn">
+                                    Заказать
+                                </button>
+                            </form>
+                            </label> 
+                        </div>   
                         <script src="/js/just-validate.min.js"></script>
                         <script src="/js/inputmask.min.js"></script>
                         <script>
@@ -862,6 +864,15 @@
                                     },  
                             });
                         </script>
+                        <div class="contact__social-header">
+                            <h2>
+                                Связаться в один клик
+                            </h2>
+                        </div>
+                        <div class="contact__social-icon">
+                            <img src="/images/Whatsapp-Icon.svg" alt="whatsapp">
+                            <img src="/images/telegram.svg" alt="telegram">
+                        </div>
                     </div>
                     <div class="contacts__map">
                         <div class="yamap">
@@ -908,6 +919,19 @@
 
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container footer___container">
+            <div class="footer__logo">
+                <img src="/images/headerLogo.svg" alt="">
+            </div>
+            <div class="footer__social">
+                <img src="/images/vk.svg" alt="vkontakte">
+                <img src="/images/instagram.svg" alt="instagram">
+                <img src="/images/fb.svg" alt="facebook">
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
