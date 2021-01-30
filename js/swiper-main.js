@@ -61,7 +61,7 @@ var publication_swiper = new Swiper('#publication_swiper', {
 
 
 });
-var project_swiper = new Swiper('#project_swiper', {
+var project_swiper = new Swiper('#project-swiper', {
     // Optional parameters 
 
     slideClass: ('swiper-slide'),
@@ -70,12 +70,18 @@ var project_swiper = new Swiper('#project_swiper', {
     slidesPercolumn: 1,
     spaceBetween: 40,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.button3-next.swiper-button-next',
+        prevEl: '.button3-prev.swiper-button-prev',
     },
     autoplay: {
         delay: 6000,
         disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.pagination3.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
     },
 
     speed: 600,
