@@ -300,9 +300,7 @@ line-height: 30px;
 .galery__header {
     width: 26%;
 }
-.galery__header h3 {
-    margin-top: 40px;
-}
+
 .galery__head {
     font-size: 48px;
 }
@@ -563,8 +561,12 @@ margin-right: 50px;
     font-size: 48px;
 } 
 .publication__firstCol {
-    margin-top: 100px;
     width: 400px;
+}
+.publication__firstCol,
+.publication__secondCol {
+    margin-top: 100px;
+    margin-bottom: 80px;  /* не понимаю почему не работает отступ снизу */
 }
 
 /* checkbox */
@@ -685,6 +687,7 @@ margin-right: 50px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, .5);
     border-radius: 5px;
+    
 }
 .input-1,
 .input-2 {

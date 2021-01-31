@@ -6,21 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/choices.min.css"> 
     
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="./js/swiper-main.js"></script>
-    <script defer src="./js/accordion-main.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="js/swiper-main.js"></script>
+    <script defer src="js/accordion-main.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/ select-galery.js"></script>
+    <script defer src="js/choices.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -189,14 +193,28 @@
                     <h2 class="galery__head">
                         Галерея
                     </h2>
-                    <h3>
+                    <label for="select-galery" class="select-galery-label">
                         Фильтровать по:
-                    </h3>
-                    <select name="select" id="selec" class="galery__select">
+                    </label>
+                    <select name="select-galery" id="select-galery" class="galery__select">
                         <option value="">Автор</option>
                         <option value="">Направление</option>
                         <option value="">Техника</option>
                     </select>
+                    <script>
+                        function select() {
+                            ( "#speed" ).selectmenu();
+                        
+                            ( "#files" ).selectmenu();
+                        
+                            ( "#number" )
+                            .selectmenu()
+                            .selectmenu( "menuWidget" )
+                                .addClass( "overflow" );
+                        
+                            ( "#salutation" ).selectmenu();
+                        };
+                    </script>
                     <div class="galery__info">
                         <p class="galery__infoDescription">
                             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний авторизуйтесь, либо воспользуйтесь лицензией. 
