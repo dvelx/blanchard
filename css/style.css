@@ -918,6 +918,7 @@ background-image: url(../images/project-9.png);
 
 .contacts__btn {
     color: #7943A4;
+    border: 2px solid #7943A4;
     width: 157px;
     height: 59px;
     border-radius: 100px;
