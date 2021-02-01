@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 300;
     src: url('../fonts/open-sans-v18-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v18-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-300.woff') format('woff'); /* Modern Browsers */
 }
   /* open-sans-regular - latin_cyrillic */
   @font-face {
@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/open-sans-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
 }
 /* open-sans-600 - latin_cyrillic */
 @font-face {
@@ -20,7 +20,7 @@
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/open-sans-v18-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v18-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-600.woff') format('woff'); /* Modern Browsers */
 }
   /* open-sans-700 - latin_cyrillic */
   @font-face {
@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/open-sans-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v18-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
 }
   /* open-sans-800 - latin_cyrillic */
   @font-face {
@@ -36,7 +36,7 @@
     font-style: normal;
     font-weight: 800;
     src: url('../fonts/open-sans-v18-latin_cyrillic-800.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v18-latin_cyrillic-800.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v18-latin_cyrillic-800.woff') format('woff'); /* Modern Browsers */
 }
 
 * {
@@ -52,7 +52,9 @@ html {
 img {
     max-width: 100%;
 }
-
+h2 {
+    font-weight: 400;
+}
 
 h1,
 h2,
@@ -106,13 +108,12 @@ a {
 }
 .header__nav a:active {
     border: 1px solid #7943A4;
+    color: #7943A4;
 }
 .header__nav a:hover {
     color: #C283F3;
 }
-.header__nav a:visited {
-    color: #7943A4;
-} 
+
 
 
 .header__enter {
@@ -250,12 +251,13 @@ a {
     font-size: 18px;
 }
 .hero__header {
-    width: 35%;
-    font-weight: 800;
+    width: 43%;
+    font-weight: 700;
     margin-top: 90px;
     font-size: 72px;
 }
 .hero__description {
+    font-weight: 700;
 margin-top: 25px;
 width: 35%;
 line-height: 30px;
@@ -263,6 +265,7 @@ line-height: 30px;
 .hero__btn {
     margin-top: 100px;
     background-color: #9D5CD0;
+    font-weight: 700;
 }
 .hero__btn:active {
     background-color: #7943A4;
@@ -298,12 +301,20 @@ line-height: 30px;
     display: flex;
 }
 .galery__header {
+    display: flex;
+    flex-direction: column;
     width: 26%;
 }
 
 .galery__head {
     font-size: 48px;
 }
+.select-galery-label {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+
 .galery__slider {
     margin-left: 50px;
 }
@@ -549,9 +560,9 @@ margin-right: 50px;
 /* PUBLICATION */
 
 .publication {
+    display: flex;
     margin-top: 80px;
     width: 100%;
-    height: 766px;
     background: url('../images/birmingham-museums-trust-MK_98NuC4-4-unsplash4.png') center/cover no-repeat;
 }
 .publication__container {
@@ -563,6 +574,7 @@ margin-right: 50px;
 .publication__firstCol {
     width: 400px;
 }
+
 .publication__firstCol,
 .publication__secondCol {
     margin-top: 100px;
@@ -649,6 +661,13 @@ margin-right: 50px;
 #check12:checked + .checbox-span::before {
     opacity: 1;
 }
+
+
+
+.publication__price {
+    margin-top: 32px;
+}
+
 /* /////// */
 
 .publication__secondCol {
@@ -661,6 +680,7 @@ margin-right: 50px;
     display: flex;
     justify-content: space-between;
 }
+
 
 .content__itemDescription {
     margin-top: 30px;
@@ -687,6 +707,7 @@ margin-right: 50px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, .5);
     border-radius: 5px;
+    margin-top: 13px;
     
 }
 .input-1,
@@ -766,76 +787,87 @@ margin-right: 50px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
+}
   
-  .swiper-container#project-swiper {
-    width: 1450px;
-    height:150px;
-    align-items: center;
-  }
+.swiper-container#project-swiper {
+width: 1450px;
+height:150px;
+align-items: center;
+}
+
+.projects1 {
+background-image: url(../images/project-1.png);
+}
+.projects1:hover {
+    background-image: url(../images/project-2-color.png);
+}
+
+.projects2 {
+background-image: url(../images/project-2.png);
+}
+.projects2:hover {
+background-image: url(../images/project-3-color.png);
+}
+
+.projects3 {
+background-image: url(../images/project-3.png);
+}
+.projects3:hover {
+background-image: url(../images/project-1-color.png);
+}
   
-  .projects1 {
-    background-image: url(../images/project-1.png);
-  }
+.projects4 {
+background-image: url(../images/project-4.png);
+}
+.projects4:hover {
+    background-image: url(../images/project-4-color.png);
+}
+
+.projects5 {
+background-image: url(../images/project-5.png);
+}
+.projects5:hover {
+    background-image: url(../images/project-7-color.png);
+}
+
+.projects6 {
+background-image: url(../images/project-6.png);
+}
+.projects6:hover {
+    background-image: url(../images/project-5-color.png);
+}
+
+.projects7 {
+background-image: url(../images/project-7.png);
+}
+.projects7:hover {
+    background-image: url(../images/project-8-color.png);
+}
+
+.projects8 {
+background-image: url(../images/project-8.png);
+}
+.projects8:hover {
+    background-image: url(../images/project-6-color.png);
+}
+
+.projects9 {
+background-image: url(../images/project-9.png);
+}
+.projects9:hover {
+    background-image: url(../images/project-9-color.png);
+}
   
-  .swiper-slide.project__item:hover .projects1 {
-    background-image: url(../image/projects1-1.jpg);
-  }
-  
-  .projects2 {
-    background-image: url(../images/project-1.png);
-  }
-  
-  .projects3 {
-    background-image: url(../images/project-2.png);
-  }
-  
-  .projects4 {
-    background-image: url(../images/project-3.png);
-  }
-  
-  .projects5 {
-    background-image: url(../images/project-4.png);
-  }
-  
-  .projects6 {
-    background-image: url(../images/project-5.png);
-  }
-  
-  .projects7 {
-    background-image: url(../images/project-6.png);
-  }
-  
-  .projects8 {
-    background-image: url(../images/project-7.png);
-  }
-  
-  .projects9 {
-    background-image: url(../images/project-8.png);
-  }
   
   
-  
-.button3-prev,
+.button3-prev {
+    background-image: url(../images/projprew.svg);
+}
 .button3-next {
-    background: #ececec;
-  }
+    background-image: url(../images/projnext.svg);
+}
   
-  /* .swiper-button-prev.swiper-button-prev-st.button3-prev::after,
-  .swiper-button-next.swiper-button-next-st.button3-next::after {
-    color: #000000;
-  }
   
-  .swiper-button-next.swiper-button-next-st.button3-next {
-    right: 13px;
-  }
-  
-  .swiper-button-prev.swiper-button-prev-st.button3-prev {
-    left: 13px;
-  } */
-
-
-  /* contacts */
 
 .contacts {
     margin-top: 50px;
