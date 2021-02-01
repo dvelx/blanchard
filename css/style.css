@@ -74,6 +74,9 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+input {
+    outline: none;
+}
 .btn {
     height: 70px;
     width: 315px;
@@ -82,6 +85,7 @@ a {
     border-radius: 100px;
     color: #FFFFFF;
     cursor: pointer;
+    outline: none;
 }
 .btn:hover {
     border-color: #D1A9F0;
@@ -117,6 +121,7 @@ a {
 
 
 .header__enter {
+
     margin-left: auto;
 }
 .header__enter a:hover {
@@ -235,12 +240,15 @@ a {
 }
 
 .hero__search {
+    cursor: pointer;
     margin-left: auto;
     display: flex;
     align-items: center;
 
 }
 .hero__input {
+    color: white;
+    cursor: pointer;
     width: 200px;
     background: transparent;
     border: none;
@@ -250,6 +258,11 @@ a {
     color: #FFFFFF;
     font-size: 18px;
 }
+
+.hero__input:hover {
+    border-bottom: 1px solid #7943A4;
+}
+
 .hero__header {
     width: 43%;
     font-weight: 700;
