@@ -106,9 +106,13 @@ input {
 .header__nav {
     width: 895px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+    margin-left: 181px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+}
+.header__nav a {
+    margin-right: 62px;
 }
 .header__nav a:active {
     border: 1px solid #7943A4;
@@ -141,7 +145,7 @@ input {
 
   .hero__slide-background {
     position: relative;
-    height: 800px;
+    height: 700px;
     z-index: -10;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,9 +186,7 @@ input {
     }
   }
 
-.hero {
-    height: 800px;
-}
+
 .hero__menu {
     height: 70px;
     display: flex;
@@ -264,19 +266,20 @@ input {
 }
 
 .hero__header {
-    width: 43%;
+    width: 36%;
     font-weight: 700;
-    margin-top: 90px;
+    margin-top: 71px;
     font-size: 72px;
 }
 .hero__description {
     font-weight: 700;
-margin-top: 25px;
+margin-top: 22px;
 width: 35%;
 line-height: 30px;
 }
 .hero__btn {
-    margin-top: 100px;
+    margin-top: 91px;
+    margin-bottom: 121px;
     background-color: #9D5CD0;
     font-weight: 700;
 }
@@ -290,11 +293,11 @@ line-height: 30px;
     color: black;
 }
 .us__header {
-    margin-top: 100px;
+    margin-top: 85px;
     font-size: 48px;
 }
 .us__description {
-    margin-top: 45px;
+    margin-top: 22px;
     font-size: 16px;
     line-height: 32px;
     width: 67.7%;
@@ -304,11 +307,11 @@ line-height: 30px;
 /* GALERY */
 
 .galery {
-    margin-top: 80px;
+    margin-top: 75px;
     background: url('../images/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png') center/cover no-repeat;
     width: 100%;
     height: 995px;
-    padding-top: 100px;
+    padding-top: 85px;
 }
 .galery__container {
     display: flex;
@@ -324,15 +327,22 @@ line-height: 30px;
 }
 .select-galery-label {
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 26px;
 }
+
 
 
 .galery__slider {
+    margin-top: 9px;
     margin-left: 50px;
 }
 .galery__info {
-    margin-top: 485px;
+    margin-top: 552px;
+}
+.galery__infoDescription {
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 16px;
 }
 .galery__select {
     margin-top: 20px;
@@ -361,7 +371,7 @@ line-height: 30px;
     width: 130px;
     justify-content: space-between;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 }
 
 .swiper-button-prev,
@@ -401,7 +411,7 @@ line-height: 30px;
 /* CATALOG */
 
 .catalog {
-    margin-top: 100px;
+    margin-top: 84px;
     color: black;
 }
 .catalog a{
@@ -438,27 +448,31 @@ line-height: 30px;
 
 .catalog__description {
     width: 69%;
-    margin-top: 40px;
+    margin-top: 31px;
     font-size: 16px;
     line-height: 32px;
 }
 .catalog__accordionBlock {
     display: flex;
-    margin-top: 50px;
+    margin-top: 44px;
 }
 .catalog__itemSelect {
 max-width: 750px;
 margin-right: 50px;
 }
 .catalog__itemName {
-    font-size: 24px;
-    margin-top: 40px;
+    font-size: 23px;
+    margin-top: 32px;
 }
 .catalog__itemDescription {
-    margin-top: 15px;
+    margin-top: 1px;
     line-height: 32px;
+    font-weight: 400;
+    font-size: 16px;
 }
 .catalog__itemDescription span {
+    font-weight: 400;
+    font-size: 12px;
     color: #999999;
 }
 
@@ -467,12 +481,47 @@ margin-right: 50px;
 }
 .accordion__item {
     width: 100%;
-    height: 60px;
+    height: 110px;
     display: flex !important;
     align-items: center !important;
     background-color: white !important;
     color: black !important;
 }
+
+.ui-state-active .ui-icon,
+.ui-icon {
+    display: none;
+}
+
+
+.ui-accordion .ui-accordion-header {
+    padding: 0;
+}
+.ui-state-active,
+.ui-state-default,
+.ui-widget-content {
+    border: none
+}
+
+.ui-state-default {
+    border-top: 1px solid #CACACA;
+}
+.ui-state-active {
+    border-top: 1px solid #CACACA;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+.ui-accordion .ui-accordion-content {
+    padding-top: 27px;
+}
+.ui-widget-content {
+    border-top: 1px solid #9D5CD0;
+    border-bottom: 1px solid #9D5CD0;
+}
+
+
 .accordion__item a {
     color: black !important;
 }
@@ -486,7 +535,7 @@ margin-right: 50px;
 }
 .accordion__description-block {
     display: flex;
-    margin-right: 100px;
+    
 }
 .accordion__description-block p:not(:last-child) {
     margin-right: 50px;
@@ -498,14 +547,14 @@ margin-right: 50px;
 /* EVENT */
 
 .event {
-    margin-top: 100px;
+    margin-top: 127px;
     color: black;
 }
 .event__heading {
     font-size: 48px;
 }
 .event__itemRow {
-    margin-top: 30px;
+    margin-top: 22px;
     display: flex;
     justify-content: space-between;
 }
@@ -529,14 +578,14 @@ margin-right: 50px;
 .event__itemWrap {
     display: flex;
     flex-direction: column;
-    padding: 0 42px 50px 50px;
+    padding: 11px 42px 50px 50px;
 }
 .event__itemWrap h3 {
     font-weight: 600;
     font-size: 24px;
 }
 .event__itemWrap p {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
     line-height: 32px;
 }
@@ -574,7 +623,7 @@ margin-right: 50px;
 
 .publication {
     display: flex;
-    margin-top: 80px;
+    margin-top: 115px;
     width: 100%;
     background: url('../images/birmingham-museums-trust-MK_98NuC4-4-unsplash4.png') center/cover no-repeat;
 }
@@ -590,16 +639,19 @@ margin-right: 50px;
 
 .publication__firstCol,
 .publication__secondCol {
-    margin-top: 100px;
+    margin-top: 85px;
     margin-bottom: 80px;  /* не понимаю почему не работает отступ снизу */
 }
 
 /* checkbox */
-
+.checkbox__box h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
 .checkbox__box {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .label1,
@@ -614,12 +666,14 @@ margin-right: 50px;
 .label10,
 .label11,
 .label12 {
+    font-size: 16px;
+    font-weight: 400;
     position: relative;
     display: flex;
     align-items: center;
     vertical-align: middle;
     padding-left: 25px;
-    margin-top: 20px;
+    margin-top: 14px;
     cursor: pointer;
 }
 #check1,
@@ -678,7 +732,7 @@ margin-right: 50px;
 
 
 .publication__price {
-    margin-top: 32px;
+    margin-top: 47px;
 }
 
 /* /////// */
@@ -696,7 +750,6 @@ margin-right: 50px;
 
 
 .content__itemDescription {
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -704,7 +757,7 @@ margin-right: 50px;
     margin-top: 10px;
 }
 .content-item-btn {
-    margin-top: 20px;
+    margin-top: 9px;
     width: 120px;
     height: 40px;
     font-size: 16px;
@@ -740,7 +793,7 @@ margin-right: 50px;
 
 .project {
     color: #000000;
-    margin-top: 100px;
+    margin-top: 85px;
 }
 .project__heading {
     font-size: 48px;
@@ -777,6 +830,12 @@ margin-right: 50px;
 }
 .project__link {
     color: #9D5CD0;
+}
+
+.project__partnerHeader {
+    margin-top: 19px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .project__swiper-btn {
@@ -883,14 +942,15 @@ background-image: url(../images/project-9.png);
   
 
 .contacts {
-    margin-top: 50px;
+    margin-top: 23px;
     border: 1px solid gray;
 }
 
 .contacts__header {
     font-size: 48px;
     color: #000000;
-    margin-top: 40px;
+    margin-top: 86px;
+    margin-left: 19px;
 }
 .contacts__content {
     display: flex;
@@ -903,15 +963,17 @@ background-image: url(../images/project-9.png);
 }
 .form-text {
     color: black;
-    margin-top: 135px;
+    margin-top: 123px;
 }
 .form-name {
+    font-weight: 600;
     font-size: 24px;
 }
 
 .form-adress {
-    margin-top: 20px;
+    margin-top: 14px;
     font-size: 16px;
+    font-weight: 400;
 }
 .form-header {
     margin-top: 36px;
@@ -920,7 +982,8 @@ background-image: url(../images/project-9.png);
     margin-top: 55px;
 }
 .contacts__form {
-    width: 45%;
+    padding-left: 23px;
+    width: 34%;
 }
 
 .contacts__form form{
@@ -935,14 +998,16 @@ background-image: url(../images/project-9.png);
     width: 157px;
     height: 59px;
     border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .contacts__input {
     font-size: 16px;
     height: 40px;
     width: 400px;
-    padding-left: 30px;
-    margin-bottom: 30px;
+    padding-left: 24px;
+    margin-bottom: 22px;
     border: 1px solid grey;
     border-radius: 100px;
 }
@@ -950,6 +1015,10 @@ background-image: url(../images/project-9.png);
 .contact__social-header {
     color: black;
     margin-top: 38px;
+    font-size: 24px;
+}
+.contact__social-header h2 {
+    font-weight: 400;
     font-size: 24px;
 }
 
