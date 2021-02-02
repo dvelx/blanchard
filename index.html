@@ -8,29 +8,29 @@
     <title>Blanchard</title>
     <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/choices.min.css"> 
     
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="js/swiper-main.js"></script>
-    <script defer src="js/accordion-main.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="js/ select-galery.js"></script>
-    <script defer src="js/choices.min.js"></script>
+    <script defer src="./js/swiper-main.js"></script>
+    <script defer src="./js/accordion-main.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/ select-galery.js"></script>
+    <script defer src="./js/choices.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="header__logo">
-                <a href="index.html">
+            <div class="header__nav-block">
+                <a href="index.html" class="header__logo">
                     <svg width="173" height="40" viewBox="0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.78965 32.7802L0.289746 29.1348H2.09561L3.79365 31.7425L5.50518 29.1348H7.29756L4.79092 32.7802L7.42559 36.5873H5.6332L3.79365 33.7977L1.96084 36.5873H0.168457L2.78965 32.7802Z" fill="white"/>
                         <path d="M7.60078 29.1348H9.32578L10.8419 33.3597C11.071 33.9616 11.2237 34.5276 11.3001 35.0577H11.354C11.3944 34.8106 11.4686 34.5119 11.5764 34.1615C11.6842 33.8066 12.2547 32.1311 13.2879 29.1348H14.9994L11.8122 37.5778C11.2327 39.1276 10.2669 39.9025 8.91475 39.9025C8.56436 39.9025 8.22295 39.8644 7.89053 39.788V38.5347C8.12861 38.5886 8.40039 38.6155 8.70586 38.6155C9.46953 38.6155 10.0063 38.173 10.3163 37.2881L10.5926 36.5873L7.60078 29.1348Z" fill="white"/>
@@ -63,26 +63,40 @@
                         <path d="M140.669 21.5989H145.205V14.8261C145.205 10.5989 146.53 9.04067 149.991 8.79383L152.221 8.62412L151.691 4.8906C148.027 5.1683 146.328 6.30996 144.644 9.67321L144.348 9.53436C145.081 7.37447 145.252 6.51052 145.221 5.39972H140.669V21.5989Z" fill="white"/>
                         <path d="M162.243 21.892C165.61 21.892 167.809 20.3492 168.915 17.5568L169.243 17.6648C168.713 19.3619 168.432 20.7041 168.417 21.5989H173V0H168.463V4.39691C168.463 6.09397 168.697 7.46704 169.258 9.3338L168.947 9.45722C167.84 6.68022 165.626 5.07574 162.243 5.07574C157.566 5.07574 155.103 7.89902 155.103 13.2987V13.6844C155.103 19.0687 157.566 21.892 162.243 21.892ZM163.958 19.115C161.152 19.115 159.686 17.3408 159.686 13.8387V13.129C159.686 9.6115 161.152 7.82188 163.958 7.82188C166.889 7.82188 168.463 9.70407 168.463 13.2062V13.7616C168.463 17.2482 166.889 19.115 163.958 19.115Z" fill="white"/>
                     </svg> 
-                </a>  
-            </div>
-        
-            <nav class="header__nav">
-                <a href="index.html">О нас</a>
-                <a href="index.html">Галерея</a>
-                <a href="index.html">Каталог</a>
-                <a href="index.html">События</a>
-                <a href="index.html">Издания</a>
-                <a href="index.html">Проекты</a>
-                <a href="index.html">Контакты</a>
-            </nav>
-            <div class="header__enter">
-                <a href="#">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">О нас</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Галерея</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Каталог</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">События</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Издания</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Проекты</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__enter">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
                     </svg>
                     Войти
                 </a>
             </div>
+            
         </div>
     </header>
 
@@ -219,7 +233,7 @@
                     </script>
                     <div class="galery__info">
                         <p class="galery__infoDescription">
-                            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний авторизуйтесь, либо воспользуйтесь лицензией. 
+                            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
                         </p>
                     </div>
                 </div>
