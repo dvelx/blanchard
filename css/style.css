@@ -186,20 +186,36 @@ input {
 .menu__dropdownContent {
     display: none;
     position: absolute;
-    width: 220px;
-    margin-top: 1px;
+    width: 300px;
+    height: 300px;
+    padding: 40px 40px 0 40px;
+    background-color: rgba(0, 0, 0, .4);
+    margin-top: 66px;
     z-index: 1;
 }
 .menu__dropdownItem {
     display: block;
     width: 220px;
     height: 40px;
-    
     padding: 9px 0 12px 14px;
     cursor: pointer;
     font-size: 14px;
-    font-weight: 600;
-    
+    font-weight: 600; 
+}
+.menu__dropdownItem:not(:last-child) {
+    margin-bottom: 20px;
+}
+.item-1 {
+    background: url('../images/menubg-1.png') center/cover no-repeat;
+}
+.item-2 {
+    background: url('../images/menubg-2.png') center/cover no-repeat;
+}
+.item-3 {
+    background: url('../images/menubg-3.png') center/cover no-repeat;
+}
+.item-4 {
+    background: url('../images/menubg-4.png') center/cover no-repeat;
 }
 .menu__dropdownItem:hover {
     border: 2px solid #9D5CD0;
