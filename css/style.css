@@ -101,14 +101,19 @@ input {
 
 
 .header {
-    background-color: #000000;
     color: white;
+}
+.nav-bg {
+    background-color: #000000;
+}
+.menu-bg {
+    background-color: rgba(0, 0, 0, .4);
 }
 .header__nav-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0 20px 0;
+    padding: 30px 15px 20px 15px;
 }
 .header__nav-list {
     display: flex;
@@ -132,11 +137,111 @@ input {
 }
 
 
+.hero__menu {
+    display: flex;
+    
+}
+.menu__link {
+    width: 1630px;
+    padding: 24px 0 24px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.menu__dropdown {
+    margin-right: 3px;
+    position: relative;
+    display: inline-block;
+}
+.menu__item {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:active {
+    color: #7943A4;
+}
+.menu__item:not(:last-child) {
+    margin-right: 100px;
+}
+.menu__rectangle {
+    width: 7px;
+    height: 7px;
+    margin-left: 4px;
+    margin-bottom: 5px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    transform: rotate(-45deg);
+}
+.menu__item:hover,
+.menu__rectangle:hover {
+    color: #9D5CD0;
+}
+.menu__dropdownContent {
+    display: none;
+    position: absolute;
+    width: 220px;
+    margin-top: 1px;
+    z-index: 1;
+}
+.menu__dropdownItem {
+    display: block;
+    width: 220px;
+    height: 40px;
+    
+    padding: 9px 0 12px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.menu__dropdownItem:hover {
+    border: 2px solid #9D5CD0;
+}
+.menu__dropdownItem:active {
+    border: 2px solid #9D5CD0;
+    background-color: rgba(194, 131, 243, 0.4);
+}
+
+.menu__dropdown:active .menu__dropdownContent {
+    display: block;
+}
+
+.hero__search {
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.hero__input {
+    color: white;
+    cursor: pointer;
+    width: 230px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    
+}
+.hero__input::placeholder {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.hero__input:hover {
+    border-bottom: 1px solid #7943A4;
+}
+
+
 /* hero style */
 
-.hero__swiper-background.swiper-container {
-    z-index: -10;
-    position: absolute;
+.swiper-container.hero__swiper-background {
+    z-index: -1;
+    position: relative;
+    margin-top: -81px;
     width: 100%;
   }
 
@@ -183,108 +288,17 @@ input {
     }
   }
 
-
-.hero__menu {
-    height: 70px;
-    display: flex;
-    background-color: rgba(0, 0, 0, .4);
-}
-.menu__link {
-    width: 1630px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-}
-.menu__dropdown {
-    margin-right: 3px;
+.hero {
     position: relative;
-    display: inline-block;
-}
-.menu__item {
-    display: flex;
-    align-items: center;
-}
-.menu__item:hover {
-    color: #9D5CD0;
-}
-.menu__item:active {
-    color: #7943A4;
-}
-.menu__item:not(:last-child) {
-    margin-right: 100px;
-}
-.menu__rectangle {
-    width: 7px;
-    height: 7px;
-    margin-left: 4px;
-    margin-bottom: 5px;
-    border-left: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    transform: rotate(-45deg);
-}
-.menu__dropdownContent {
-    display: none;
-    position: absolute;
-    width: 220px;
-    margin-top: 1px;
-    z-index: 1;
-}
-.menu__dropdownItem {
-    display: block;
-    width: 220px;
-    height: 40px;
-    
-    padding: 9px 0 12px 14px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    
-}
-.menu__dropdownItem:hover {
-    border: 2px solid #9D5CD0;
-}
-.menu__dropdownItem:active {
-    border: 2px solid #9D5CD0;
-    background-color: rgba(194, 131, 243, 0.4);
+    margin-top: -600px;
 }
 
-.menu__dropdown:hover .menu__dropdownContent {
-    display: block;
-}
 
-.hero__search {
-    cursor: pointer;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 18px;
-    border-bottom: 1px solid white;
-
-}
-.hero__input {
-    color: white;
-    cursor: pointer;
-    width: 230px;
-    background: transparent;
-    border: none;
-    
-}
-.hero__input::placeholder {
-    color: #FFFFFF;
-    font-size: 18px;
-}
-
-.hero__search:hover {
-    border-bottom: 1px solid #7943A4;
-}
 
 .hero__header {
     width: 36%;
     font-weight: 700;
-    margin-top: 71px;
+    margin-top: 50px;
     font-size: 72px;
 }
 .hero__description {
@@ -520,6 +534,10 @@ margin-right: 50px;
 .ui-state-default,
 .ui-widget-content {
     border: none
+}
+.ui-corner-all,
+.ui-corner-all {
+    border-radius: 0;
 }
 
 .ui-state-default {
