@@ -71,6 +71,7 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -109,17 +110,19 @@ input {
 .menu-bg {
     background-color: rgba(0, 0, 0, .4);
 }
+.header__logo {
+    margin-right: 180px;
+}
 .header__nav-block {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 15px 20px 15px;
+    padding: 35px 9px 27px 18px;
 }
 .header__nav-list {
     display: flex;
 }
 .header__nav-item {
-    margin-right: 62px;
+    margin-right: 66px;
 }
 
 .header__nav-link:active {
@@ -129,7 +132,9 @@ input {
 .header__nav-link:hover {
     color: #C283F3;
 }
-
+.header__enter{
+    margin-left: auto;
+}
 .header__enter:hover {
     color: #C283F3;
     stroke: #C283F3;
