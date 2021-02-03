@@ -203,7 +203,7 @@ input {
 
 .menu__dropdownContent {
     cursor: pointer;
-    display: none;
+    opacity: 0;
     position: absolute;
     width: 300px;
     height: 300px;
@@ -211,12 +211,13 @@ input {
     background-color: rgba(0, 0, 0, .4);
     margin-top: 25px;
     z-index: 1;
+    transition: opacity .25s ease-in-out;
 }
 .menu__dropdownItem {
     display: block;
     width: 220px;
     height: 40px;
-    padding: 9px 0 12px 14px;
+    padding: 12px 0 12px 14px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 600; 
@@ -245,7 +246,7 @@ input {
 }
 
 .menu__dropdown:active .menu__dropdownContent {
-    display: block;
+    opacity: 1;
 }
 
 .hero__search {
