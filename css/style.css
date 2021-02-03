@@ -68,6 +68,10 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+a:hover {
+    color: #C283F3;
+    transition: color .2s ease-out;
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -95,6 +99,7 @@ input {
 }
 .btn:hover {
     border-color: #D1A9F0;
+    transition: border-color .3s ease-out;
 }
 
 /* header style */
@@ -188,6 +193,7 @@ input {
 
 .menu__item:hover {
     color: #7943A4;
+    transition: color .2s ease-out;
 }
 
 .menu__item:active:after {
@@ -1117,10 +1123,14 @@ background-image: url(../images/project-9.png);
 [class*="ground-pane"] {
     filter: grayscale(1);
 }
-
-.contacts_map {
-    position: absolute;
-    right: 0;
+.map {
+    width: 1200px;
+    height: 600px;
+}
+.contacts__map {
+    position: relative;
+    z-index: 1;
+    margin-right: -300px;
 }
 
 
