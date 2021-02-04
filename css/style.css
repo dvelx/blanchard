@@ -210,8 +210,8 @@ input {
 }
 
 .menu__dropdownContent {
-    
     display: none;
+    
 }
 .menu__dropdownItem {
     display: block;

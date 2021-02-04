@@ -3,12 +3,15 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#close').classList.toggle('is-active');
     });
 
-    let menuButton = document.querySelector('.menu__item');
-    let showItem = document.querySelector('.menu__dropdownContent');
+    document.querySelectorAll('.menu__item').forEach(function(menuItem) {
+        menuItem.addEventListener('click', function(event) {
+            const path = event.currentTarget.dataset.path
 
-    menuButton.onclick = function() {
-        showItem.classList.toggle('show');
-    }
-    
+            document.querySelectorAll('.menu__dropdownContent').forEach(function(tabContent) {
+                tabContent.classList.remove('show')
+            })
+            document.querySelector(`[data-target="${path}"]`).classList.toggle('show')
+        })
+    })
 
 });
