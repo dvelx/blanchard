@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/jquery-ui.css">
     <link rel="stylesheet" href="./css/choices.min.css"> 
-    <link rel="stylesheet" href="./css/simplebar.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     
     <link rel="stylesheet" href="./css/style.css">
 
@@ -26,7 +26,6 @@
     <script defer src="./js/main.js"></script>
     <script defer src="./js/ select-galery.js"></script>
     <script defer src="./js/choices.min.js"></script>
-    <script defer src="./js/simplebar.js"></script>
 </head>
 <body>
     <header class="header">
@@ -105,7 +104,11 @@
                     <div class="menu__link">
                         <div class="menu__dropdown" >
                             <div class="menu__item">Реализм</div>
-                            <ul class="menu__dropdownContent">
+                            <ul class="menu__dropdownContent" data-simplebar data-simplebar-auto-hide = "false">
+                                <li class="menu__dropdownItem item-1">Тинторетто</li>
+                                <li class="menu__dropdownItem item-2">Фридрих</li>
+                                <li class="menu__dropdownItem item-3">Леонардо</li>
+                                <li class="menu__dropdownItem item-4">Вероккьо</li>
                                 <li class="menu__dropdownItem item-1">Тинторетто</li>
                                 <li class="menu__dropdownItem item-2">Фридрих</li>
                                 <li class="menu__dropdownItem item-3">Леонардо</li>
@@ -114,7 +117,7 @@
                         </div>
                         <div class="menu__dropdown">
                             <div class="menu__item">Импрессионизм</div>
-                            <ul class="menu__dropdownContent">
+                            <ul class="menu__dropdownContent" data-simplebar data-simplebar-auto-hide = "false">
                                 <li class="menu__dropdownItem item-1">Тинторетто</li>
                                 <li class="menu__dropdownItem item-2">Фридрих</li>
                                 <li class="menu__dropdownItem item-3">Леонардо</li>
@@ -123,7 +126,7 @@
                         </div>
                         <div class="menu__dropdown">
                             <div class="menu__item">Постимпрессионизм</div>
-                            <ul class="menu__dropdownContent">
+                            <ul class="menu__dropdownContent" data-simplebar data-simplebar-auto-hide = "false">
                                 <li class="menu__dropdownItem item-1">Тинторетто</li>
                                 <li class="menu__dropdownItem item-2">Фридрих</li>
                                 <li class="menu__dropdownItem item-3">Леонардо</li>
@@ -132,7 +135,7 @@
                         </div>
                         <div class="menu__dropdown">
                             <div class="menu__item">Авангард</div>
-                            <ul class="menu__dropdownContent">
+                            <ul class="menu__dropdownContent" data-simplebar data-simplebar-auto-hide = "false">
                                 <li class="menu__dropdownItem item-1">Тинторетто</li>
                                 <li class="menu__dropdownItem item-2">Фридрих</li>
                                 <li class="menu__dropdownItem item-3">Леонардо</li>
@@ -141,7 +144,7 @@
                         </div>
                         <div class="menu__dropdown">
                             <div class="menu__item">Футуризм</div>
-                            <ul class="menu__dropdownContent">
+                            <ul class="menu__dropdownContent" data-simplebar data-simplebar-auto-hide = "false">
                                 <li class="menu__dropdownItem item-1">Тинторетто</li>
                                 <li class="menu__dropdownItem item-2">Фридрих</li>
                                 <li class="menu__dropdownItem item-3">Леонардо</li>

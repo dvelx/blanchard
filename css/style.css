@@ -210,6 +210,7 @@ input {
 }
 
 .menu__dropdownContent {
+    
     display: none;
 }
 .menu__dropdownItem {
@@ -255,6 +256,10 @@ input {
     margin-top: 25px;
     z-index: 1;
 }
+
+.simplebar-scrollbar::before {
+    background-color: #9D5CD0;
+  }
 
 .hero__search {
     cursor: pointer;
