@@ -7,10 +7,18 @@ window.addEventListener('DOMContentLoaded', function() {
         menuItem.addEventListener('click', function(event) {
             const path = event.currentTarget.dataset.path
 
+            dropDown = document.querySelector('.menu__dropdownContent');
+
             document.querySelectorAll('.menu__dropdownContent').forEach(function(tabContent) {
                 tabContent.classList.remove('show')
             })
-            document.querySelector(`[data-target="${path}"]`).classList.toggle('show')
+            document.querySelector(`[data-target="${path}"]`).classList.add('show');
+
+            if (dropDown.classList.contains('show')) {
+                dropDown.addEventListener('click', function() {
+                    dropDown.classList.remove('show')
+                })
+            }
         })
     })
 
