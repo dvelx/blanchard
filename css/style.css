@@ -411,7 +411,9 @@ line-height: 30px;
 .select-galery-label {
     font-weight: 600;
     margin-top: 26px;
+    margin-bottom: 20px;
 }
+
 
 .choices__inner {
     width: 400px;
