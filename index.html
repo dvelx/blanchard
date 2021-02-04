@@ -25,7 +25,8 @@
     <script defer src="./js/accordion-main.js"></script>
     <script defer src="./js/main.js"></script>
     <script defer src="./js/ select-galery.js"></script>
-    <script defer src="./js/choices.min.js"></script>
+    <script src="./js/choices.min.js"></script>
+    
 </head>
 <body>
     <header class="header">
@@ -225,27 +226,21 @@
                     <h2 class="galery__head">
                         Галерея
                     </h2>
-                    <label for="select-galery" class="select-galery-label">
+                    <label for="select-custom-galery" class="select-galery-label" >
                         Фильтровать по:
                     </label>
-                    <select name="select-galery" id="select-galery" class="galery__select">
+                    <select name="select-galery" id="select-custom-galery" class="galery__select">
                         <option value="">Автор</option>
                         <option value="">Направление</option>
                         <option value="">Техника</option>
                     </select>
+                    
                     <script>
-                        function select() {
-                            ( "#speed" ).selectmenu();
-                        
-                            ( "#files" ).selectmenu();
-                        
-                            ( "#number" )
-                            .selectmenu()
-                            .selectmenu( "menuWidget" )
-                                .addClass( "overflow" );
-                        
-                            ( "#salutation" ).selectmenu();
-                        };
+                        const element = document.querySelector('#select-custom-galery');
+                        const choices = new Choices(element, {
+                            searchEnabled: false,
+                            position: 'bottom',
+                        });
                     </script>
                     <div class="galery__info">
                         <p class="galery__infoDescription">
