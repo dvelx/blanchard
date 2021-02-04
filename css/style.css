@@ -210,17 +210,8 @@ input {
 }
 
 .menu__dropdownContent {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    padding: 40px 40px 0 40px;
-    background-color: rgba(0, 0, 0, .4);
-    margin-top: 25px;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity .3s ease-in;
+    display: none;
+    
     
 }
 .menu__dropdownItem {
@@ -256,7 +247,15 @@ input {
 }
 
 .show {
-    opacity: 1;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 40px 40px 0 40px;
+    background-color: rgba(0, 0, 0, .4);
+    margin-top: 25px;
+    z-index: 1;
 }
 
 .simplebar-scrollbar::before {
@@ -640,7 +639,7 @@ margin-right: 50px;
 .ui-state-default:nth-child(1) {
     border-top: 1px solid #CACACA;
 }
-.ui-state-active {
+.ui-state-active { 
     border-bottom: 1px solid #CACACA;
 }
 
