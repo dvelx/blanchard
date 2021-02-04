@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.querySelector(`[data-target="${path}"]`).classList.add('show');
 
             if (dropDown.classList.contains('show')) {
-                dropDown.addEventListener('click', function() {
+                document.querySelector('.menu__item').addEventListener('click', function() {
                     dropDown.classList.remove('show')
                 })
             }
