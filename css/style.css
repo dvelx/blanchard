@@ -107,6 +107,8 @@ input {
 
 
 .header {
+    position: absolute;
+    width: 100%;
     color: white;
 }
 .nav-bg {
@@ -173,7 +175,7 @@ input {
     color: #7943A4;
 }
 .menu__item:not(:last-child) {
-    margin-right: 100px;
+    margin-right: 98px;
 }
 .menu__item::after {
     content: "";
@@ -208,16 +210,7 @@ input {
 }
 
 .menu__dropdownContent {
-    cursor: pointer;
-    opacity: 0;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    padding: 40px 40px 0 40px;
-    background-color: rgba(0, 0, 0, .4);
-    margin-top: 25px;
-    z-index: 1;
-    transition: opacity .25s ease-in-out;
+    display: none;
 }
 .menu__dropdownItem {
     display: block;
@@ -251,8 +244,16 @@ input {
     background-color: rgba(194, 131, 243, 0.4);
 }
 
-.menu__dropdown:active .menu__dropdownContent {
-    opacity: 1;
+.show {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 40px 40px 0 40px;
+    background-color: rgba(0, 0, 0, .4);
+    margin-top: 25px;
+    z-index: 1;
 }
 
 .hero__search {
@@ -287,14 +288,12 @@ input {
 
 .swiper-container.hero__swiper-background {
     z-index: -1;
-    position: relative;
-    margin-top: -81px;
     width: 100%;
   }
 
   .hero__slide-background {
     position: relative;
-    height: 700px;
+    height: 805px;
     z-index: -10;
     background-repeat: no-repeat;
     background-size: cover;
@@ -345,7 +344,7 @@ input {
 .hero__header {
     width: 36%;
     font-weight: 700;
-    margin-top: 50px;
+    margin-top: 42px;
     font-size: 72px;
 }
 .hero__description {
