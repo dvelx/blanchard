@@ -31,7 +31,7 @@
 <body>
     <header class="header">
         
-            <div class="nav-bg">
+            <div class="header__top-nav">
                 <div class="container header__nav-block">
                     <a href="index.html" class="header__logo">
                         <svg width="173" height="40" viewBox="0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,75 +100,20 @@
                     </a>
                 </div>
             </div>
-            <div class="menu-bg">
+            <div class="header__bottom-nav">
                 <div class="container hero__menu">
                     <div class="menu__link">
-                        <div class="menu__dropdown" >
-                            <div class="menu__item" data-path="one">Реализм</div>
-                            <ul class="menu__dropdownContent" data-target="one" data-simplebar data-simplebar-auto-hide = "false">
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                            </ul>
-                        </div>
-                        <div class="menu__dropdown">
-                            <div class="menu__item" data-path="two">Импрессионизм</div>
-                            <ul class="menu__dropdownContent" data-target="two" data-simplebar data-simplebar-auto-hide = "false">
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                            </ul>
-                        </div>
-                        <div class="menu__dropdown">
-                            <div class="menu__item" data-path="three">Постимпрессионизм</div>
-                            <ul class="menu__dropdownContent" data-target="three" data-simplebar data-simplebar-auto-hide = "false">
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                            </ul>
-                        </div>
-                        <div class="menu__dropdown">
-                            <div class="menu__item" data-path="fouth">Авангард</div>
-                            <ul class="menu__dropdownContent" data-target="fouth" data-simplebar data-simplebar-auto-hide = "false">
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                            </ul>
-                        </div>
-                        <div class="menu__dropdown">
-                            <div class="menu__item" data-path="five">Футуризм</div>
-                            <ul class="menu__dropdownContent" data-target="five" data-simplebar data-simplebar-auto-hide = "false">
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                                <li class="menu__dropdownItem item-1">Тинторетто</li>
-                                <li class="menu__dropdownItem item-2">Фридрих</li>
-                                <li class="menu__dropdownItem item-3">Леонардо</li>
-                                <li class="menu__dropdownItem item-4">Вероккьо</li>
-                            </ul>
-                        </div>
+                        
+                            <button class="menu__item" data-path="one">Реализм</button>
+
+                            <button class="menu__item" data-path="two">Импрессионизм</button>
+
+                            <button class="menu__item" data-path="three">Постимпрессионизм</button>
+                           
+                            <button class="menu__item" data-path="fouth">Авангард</button>
+
+                            <button class="menu__item" data-path="five">Футуризм</button>
+                            
                         <div class="hero__search">
                             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
@@ -195,7 +140,58 @@
 
         <section class="hero">
             
-            
+            <div class="menu__dropdown">
+                <ul class="menu__dropdownContent" data-target="one" data-simplebar data-simplebar-auto-hide = "false">
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                </ul>
+                <ul class="menu__dropdownContent" data-target="two" data-simplebar data-simplebar-auto-hide = "false">
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                </ul>
+                <ul class="menu__dropdownContent" data-target="three" data-simplebar data-simplebar-auto-hide = "false">
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                </ul>
+                <ul class="menu__dropdownContent" data-target="fouth" data-simplebar data-simplebar-auto-hide = "false">
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                </ul>
+                <ul class="menu__dropdownContent" data-target="five" data-simplebar data-simplebar-auto-hide = "false">
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                    <li class="menu__dropdownItem item-1">Тинторетто</li>
+                    <li class="menu__dropdownItem item-2">Фридрих</li>
+                    <li class="menu__dropdownItem item-3">Леонардо</li>
+                    <li class="menu__dropdownItem item-4">Вероккьо</li>
+                </ul>
+            </div>
             <div class="container hero__container">
                 <h1 class="hero__header">
                     Прикоснитесь к прекрасному

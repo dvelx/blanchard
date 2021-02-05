@@ -111,10 +111,10 @@ input {
     width: 100%;
     color: white;
 }
-.nav-bg {
+.header__top-nav {
     background-color: #000000;
 }
-.menu-bg {
+.header__bottom-nav {
     background-color: rgba(0, 0, 0, .4);
 }
 .header__logo {
@@ -136,16 +136,22 @@ input {
     border: 1px solid #7943A4;
     color: #7943A4;
 }
+.header__nav-link{
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
+}
 .header__nav-link:hover {
     color: #C283F3;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
 .header__enter{
     margin-left: auto;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
 .header__enter:hover {
     color: #C283F3;
     stroke: #C283F3;
     fill: #C283F3;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
 
 
@@ -168,6 +174,11 @@ input {
 }
 .menu__item {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: #7943A4;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
     
 }
 
@@ -187,15 +198,19 @@ input {
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     transform: rotate(-45deg);
+    transition: border-left .1s ease;
+    transition: border-bottom .1s ease;
 }
 .menu__item:hover:after {
     border-left: 1px solid #7943A4;
     border-bottom: 1px solid #7943A4;
+    transition: border-left .1s ease;
+    transition: border-bottom .1s ease;
 }
 
 .menu__item:hover {
     color: #7943A4;
-    transition: color .2s ease-out;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
 
 .menu__item:active:after {
@@ -260,8 +275,20 @@ input {
 
 .simplebar-scrollbar::before {
     background-color: #9D5CD0;
+    width: 2px;
+    height: 28px;
   }
-
+  .simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 19px;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+.simplebar-visible {
+    height: 300px;
+}
 .hero__search {
     cursor: pointer;
     margin-left: auto;
