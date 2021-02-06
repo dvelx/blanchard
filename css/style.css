@@ -67,10 +67,11 @@ a {
 a {
     text-decoration: none;
     color: #ffffff;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
 a:hover {
     color: #C283F3;
-    transition: color .2s ease-out;
+    transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
 ul {
     list-style-type: none;
@@ -232,7 +233,7 @@ input {
     height: 300px;
     padding: 40px 40px 0 40px;
     background-color: rgba(0, 0, 0, .4);
-    margin-top: 25px;
+    margin-right: 40px;
     z-index: 1;
     
 }
@@ -244,6 +245,7 @@ input {
     cursor: pointer;
     font-size: 14px;
     font-weight: 600; 
+
 }
 .menu__dropdownItem:not(:last-child) {
     margin-bottom: 20px;
@@ -289,7 +291,7 @@ input {
 .simplebar-visible {
     height: 300px;
 }
-.hero__search {
+.nav__bottom-search {
     cursor: pointer;
     margin-left: auto;
     display: flex;
@@ -298,22 +300,32 @@ input {
     font-size: 18px;
 
 }
-.hero__input {
-    color: white;
+.search-btn {
+    outline: none;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+}
+.search-input {
+    color: white;
     width: 230px;
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
     
 }
-.hero__input::placeholder {
+.search-input::placeholder {
     color: #FFFFFF;
     font-size: 18px;
 }
 
-.hero__input:hover {
+
+.nav__bottom-search  .search-input:hover {
     border-bottom: 1px solid #7943A4;
+}
+.nav__bottom-search  path:hover {
+    fill: #7943A4;
+    stroke: #7943A4;
 }
 
 
