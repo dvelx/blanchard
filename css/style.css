@@ -275,21 +275,41 @@ input {
     
 }
 
-.simplebar-scrollbar::before {
-    background-color: #9D5CD0;
-    width: 2px;
-    height: 28px;
-  }
-  .simplebar-track {
-    z-index: 1;
+.simplebar-scrollbar:before {
     position: absolute;
-    right: 19px;
+    content: '';
+    background: #7943A4;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    height: 22px;
+}
+.simplebar-scrollbar.simplebar-visible:before{
+    opacity: 1;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{
+    top: 0;
     bottom: 0;
-    pointer-events: none;
-    overflow: hidden;
-  }
+}
+.simplebar-track {
+z-index: 1;
+position: absolute;
+right: 19px;
+bottom: 0;
+pointer-events: none;
+overflow: hidden;
+background-color: #000000;
+width: 2px;
+height: 220px;
+margin-top: auto;
+margin-bottom: auto;
+}
 .simplebar-visible {
     height: 300px;
+}
+.simplebar-track.simplebar-vertical {
+    width: 2px;
 }
 .nav__bottom-search {
     cursor: pointer;
@@ -318,7 +338,7 @@ input {
     color: #FFFFFF;
     font-size: 18px;
 }
-
+§
 
 .nav__bottom-search  .search-input:hover {
     border-bottom: 1px solid #7943A4;
