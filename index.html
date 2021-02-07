@@ -223,25 +223,26 @@
         <section class="galery" id="galery-section">
             <div class="container galery__container">
                 <div class="galery__header">
-                    <h2 class="galery__head">
-                        Галерея
-                    </h2>
-                    <label for="select-custom-galery" class="select-galery-label" >
-                        Фильтровать по:
-                    </label>
-                    <select name="select-galery" id="select-custom-galery" class="galery__select">
-                        <option value="">Автор</option>
-                        <option value="">Направление</option>
-                        <option value="">Техника</option>
-                    </select>
-                    
-                    <script>
-                        const element = document.querySelector('#select-custom-galery');
-                        const choices = new Choices(element, {
-                            searchEnabled: false,
-                            position: 'bottom',
-                        });
-                    </script>
+                    <div class="galery__choices">
+                        <h2 class="galery__head">
+                            Галерея
+                        </h2>
+                        <label for="select-custom-galery" class="select-galery-label" >
+                            Фильтровать по:
+                        </label>
+                        <select name="select-galery" id="select-custom-galery" class="galery__select">
+                            <option value="">Направление</option>
+                            <option value="">Техника</option>
+                        </select>
+                        
+                        <script>
+                            const element = document.querySelector('#select-custom-galery');
+                            const choices = new Choices(element, {
+                                searchEnabled: false,
+                                position: 'bottom',
+                            });
+                        </script>
+                    </div>
                     <div class="galery__info">
                         <p class="galery__infoDescription">
                             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
@@ -381,7 +382,7 @@
         </section>
 
         <section class="catalog" id="catalog-section">
-            <div class="container">
+            <div class="container catalog__container">
                 <div class="catalog__header">
                     <div class="heading__block">
                         <h2 class="heading">Каталог</h2>
