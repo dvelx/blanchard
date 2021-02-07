@@ -263,6 +263,7 @@ input {
     background: url('../images/menubg-4.png') center/cover no-repeat;
 }
 .menu__dropdownItem:hover {
+    padding: 10px 0 12px 12px;
     border: 2px solid #9D5CD0;
 }
 .menu__dropdownItem:active {
