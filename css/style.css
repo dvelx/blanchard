@@ -93,16 +93,13 @@ input {
     height: 70px;
     width: 315px;
     background-color: transparent;
-    border: 1px solid #9D5CD0;
+    border: 2px solid #9D5CD0;
     border-radius: 100px;
     color: #FFFFFF;
     cursor: pointer;
     outline: none;
 }
-.btn:hover {
-    border-color: #D1A9F0;
-    transition: border-color .3s ease-out;
-}
+
 
 /* header style */
 
@@ -123,7 +120,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px 9px 27px 18px;
+    padding: 35px 15px 27px 15px;
 }
 .header__nav {
     margin-right: 106px;
@@ -135,13 +132,13 @@ input {
     margin-right: 66px;
 }
 
-.header__nav-link:active {
+.header__nav-anchor:active {
     color: #7943A4;
 }
-.header__nav-link{
+.header__nav-anchor {
     transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
-.header__nav-link:hover {
+.header__nav-anchor:hover {
     color: #C283F3;
     transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
@@ -158,7 +155,7 @@ input {
 
 .container__bottom-menu {
     display: flex;
-    padding: 0 3px 0 12px;
+    padding: 0 15px 0 15px;
     justify-content: space-between;
     
 }
@@ -225,7 +222,7 @@ input {
     color: #9D5CD0;
 }
 
-.menu__dropdownContent {
+.menu__dropdown-content {
     display: none;
     cursor: pointer;
     position: absolute;
@@ -360,7 +357,7 @@ margin-bottom: auto;
 
 .hero__container {
     padding-top: 69px;
-    margin-bottom: 121px;
+    padding-bottom: 121px;
 }
 
 .hero__slide-background {
@@ -417,15 +414,23 @@ margin-bottom: auto;
     font-weight: 700;
     width: 35%;
     line-height: 30px;
-    padding-left: 3px;
     margin-bottom: 93px;
 }
 .hero__btn {
     padding-left: 10px;
     background-color: #9D5CD0;
     font-weight: 700;
+    border: 3px solid #9D5CD0;
+    transition: border .5s cubic-bezier(.45,.02,.53,.99);
+}
+.hero__btn:hover {
+    border: 3px solid #D1A9F0;
+    background-color: #9D5CD0;
+    transition: border .5s cubic-bezier(.45,.02,.53,.99);
+
 }
 .hero__btn:active {
+    border: 3px solid #D1A9F0;
     background-color: #7943A4;
 }
 
@@ -621,9 +626,9 @@ margin-bottom: auto;
 }
 .heading {
     font-size: 48px;
+    margin-right: 45px;
 }
 .heading__country {
-    margin-left: 45px;
     display: flex;
     
 }

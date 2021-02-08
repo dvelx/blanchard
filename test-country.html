@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            width: 45px;
+            height: 45px;
+            display: block;
+            position: relative;
+            
+        }
+        input[type="checkbox"] + span {
+            position: absolute;
+            margin: 100px 0 0 100px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: url(./images/country1.svg) no-repeat;
+            cursor: pointer;
+        }
+        input[type="checkbox"] + span:hover {
+            
+            box-shadow: 0 0 10px #7943A4;
+        }
+        input[type="checkbox"]:checked + span {
+
+            border: 1px solid  #7943A4;
+            
+            
+            
+        }
+        #check {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="country-block">
+        <form action="#">
+            <label>
+                <input type="checkbox" value="1" name="k" id="check">
+                <span></span>
+            </label>
+        </form>
+    </div>
+</body>
+</html>
