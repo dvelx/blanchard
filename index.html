@@ -62,8 +62,10 @@
                         </ul>
                     </nav>
                     <a href="#" class="header__enter">
-                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 13 13" width="13" height="13">
+                            <path fill="white"
+                            d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z" />
                         </svg>
                         Войти
                     </a>
@@ -141,7 +143,7 @@
                     <form class="nav__bottom-search" action="http://google.com/search" target="_blank">
                         <button class="search-btn">
                             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                                <rect  width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
                             </svg>
                         </button>
@@ -200,15 +202,18 @@
                             Фильтровать по:
                         </label>
                         <select name="select-galery" id="select-custom-galery" class="galery__select">
-                            <option value="">Направление</option>
-                            <option value="">Техника</option>
+                            <option value="1">Автор</option>
+                            <option value="1">Направление</option>
+                            <option value="1">Техника</option>
                         </select>
                         
                         <script>
                             const element = document.querySelector('#select-custom-galery');
                             const choices = new Choices(element, {
                                 searchEnabled: false,
-                                position: 'bottom',
+                                placeholder: true,
+                                placeholderValue: "Автор",
+                                maxItemCount: -1,
                             });
                         </script>
                     </div>
@@ -356,28 +361,74 @@
                     <div class="heading__block">
                         <h2 class="heading">Каталог</h2>
                         <div class="heading__country">
-                            <img class="country-img" src="./images/country1.svg" alt="">
-                            <img class="country-img" src="./images/country2.svg" alt="">
-                            <img class="country-img" src="./images/country3.svg" alt="">
-                            <img class="country-img" src="./images/country4.svg" alt="">
-                            <img class="country-img" src="./images/country5.svg" alt="">
+                            <button  class="country-btn" data-language="france">
+                                <img src="./images/country1.svg" alt="">
+                            </button>
+                            <button  class="country-btn" data-language="germany">
+                                <img src="./images/country2.svg" alt="">
+                            </button>
+                            <button  class="country-btn" data-language="italy">
+                                <img src="./images/country3.svg" alt="">
+                            </button>
+                            <button  class="country-btn" data-language="russian">
+                                <img src="./images/country4.svg" alt="">
+                            </button>
+                            <button  class="country-btn" data-language="belgian">
+                                <img src="./images/country5.svg" alt="">
+                            </button>
                         </div>
                     </div>
-                    <p class="catalog__description">
+                    <p class="catalog__header-description">
                         Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
                     </p>
                 </div>
-                <div class="catalog__accordionBlock">
-                    <div class="catalog__itemSelect">
-                        <div class="catalog__itemImage">
+                <div class="catalog__accordion-block">
+                    <div class="catalog__item-select">
+                        <div class="catalog__item-image">
                             <img src="./images/catalogMainImage.png" alt="">
                         </div>
-                        <h3 class="catalog__itemName">
-                            Доминико Гирландайо
-                        </h3>
-                        <p class="catalog__itemDescription">
-                           <span>2 июня 1448 — 11 января 1494.</span> <br> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
-                        </p>
+                        <div class="catalog__description catalog__description-active" data-target="france">
+                            <h3 class="catalog__item-name">
+                                Dominico Ghirlandaio
+                            </h3>
+                            <p class="catalog__item-description">
+                               <span>2 juin 1448 — 11 janvier 1494.</span> <br> L'un des principaux peintres florentins Quattrocento, fondateur d'une dynastie artistique, qui a été poursuivie par son frère David et son fils Ridolfo. Chef de l'atelier d'art, où le jeune Michel-Ange a maîtrisé les compétences professionnelles pendant un an. L'auteur de cycles de fresques, dans lesquels la vie à la maison des personnages bibliques est représentée en forme convexe, avec toutes sortes de détails (dans leur rôle sont les nobles citoyens de Florence en costumes de l'époque).
+                            </p>
+                        </div>
+                        <div class="catalog__description" data-target="germany">
+                            <h3 class="catalog__item-name">
+                                Dominico Ghirlandaio
+                            </h3>
+                            <p class="catalog__item-description">
+                               <span>2 Juni 1448 — 11 Januar 1494.</span> <br> Einer der führenden Florentiner Maler Quattrocento, Gründer einer künstlerischen Dynastie, die von seinem Bruder David und seinem Sohn Ridolfo weitergeführt wurde. Leiter der Kunstwerkstatt, in der der junge Michelangelo ein Jahr lang berufliche Fähigkeiten beherrschte. Der Autor von Freskenzyklen, in denen das häusliche Leben biblischer Figuren konvex dargestellt wird, mit allen möglichen Details (in ihrer Rolle sind die Adligen von Florenz in Kostümen dieser Zeit).
+
+                            </p>
+                        </div>
+                        <div class="catalog__description" data-target="italy">
+                            <h3 class="catalog__item-name">
+                                Dominico Ghirlandaio
+                            </h3>
+                            <p class="catalog__item-description">
+                               <span>2 giugno 1448 — 11 gennaio 1494.</span> <br> Uno dei principali pittori fiorentini del Quattrocento, fondatore di una dinastia artistica, continuata dal fratello David e dal figlio Ridolfo. Responsabile del laboratorio d'arte, dove il giovane Michelangelo ha acquisito competenze professionali per un anno. L'autore di cicli di affreschi, in cui la vita domestica dei personaggi biblici è mostrata in forma convessa, con ogni sorta di dettagli (nel loro ruolo sono i nobili cittadini di Firenze in costumi dell'epoca).
+
+                            </p>
+                        </div>
+                        <div class="catalog__description" data-target="russian">
+                            <h3 class="catalog__item-name">
+                                Доминико Гирландайо
+                            </h3>
+                            <p class="catalog__item-description">
+                               <span>2 июня 1448 — 11 января 1494.</span> <br> Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+                            </p>
+                        </div>
+                        <div class="catalog__description" data-target="belgian">
+                            <h3 class="catalog__item-name">
+                                Dominico Ghirlandaio
+                            </h3>
+                            <p class="catalog__item-description">
+                               <span>2 Juni 1448 — 11 Januar 1494.</span> <br> Einer der führenden Florentiner Maler Quattrocento, Gründer einer künstlerischen Dynastie, die von seinem Bruder David und seinem Sohn Ridolfo weitergeführt wurde. Leiter der Kunstwerkstatt, in der der junge Michelangelo ein Jahr lang berufliche Fähigkeiten beherrschte. Der Autor von Freskenzyklen, in denen das häusliche Leben biblischer Figuren konvex dargestellt wird, mit allen möglichen Details (in ihrer Rolle sind die Adligen von Florenz in Kostümen dieser Zeit).
+                            </p>
+                        </div>
                     </div>
                     <div class="catalog__accordion">
                         <div id="accordion">
