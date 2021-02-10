@@ -72,7 +72,8 @@ h3,
 p,
 a,
 button {
-    margin: 0 0 0 0;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -129,7 +130,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px 15px 27px 15px;
+    padding: 30px 15px 28px 15px;
 }
 .header__nav {
     margin-right: 106px;
@@ -170,7 +171,7 @@ input {
 
 .container__bottom-menu {
     display: flex;
-    padding: 0 15px 0 15px;
+    padding: 1px 15px 0 15px;
     justify-content: space-between;
     
 }
@@ -185,7 +186,7 @@ input {
     display: inline-block;
 }
 .menu__dropdown:not(:last-child) {
-    margin-right: 87px;
+    margin-right: 99px;
 }
 .menu__item {
     cursor: pointer;
@@ -329,9 +330,11 @@ margin-bottom: auto;
     align-items: center;
     font-weight: 400;
     font-size: 18px;
+    padding: 4px 0 1px 0;
 
 }
 .search-btn {
+    margin-right: 8px;
     outline: none;
     background-color: transparent;
     border: none;
@@ -339,7 +342,7 @@ margin-bottom: auto;
 }
 .search-input {
     color: white;
-    width: 218px;
+    width: 221px;
     background: transparent;
     border: none;
     border-bottom: 1px solid white;
@@ -383,7 +386,7 @@ margin-bottom: auto;
 
 .hero__slide-background {
     position: relative;
-    height: 805px;
+    height: 800px;
     z-index: -10;
     background-repeat: no-repeat;
     background-size: cover;
@@ -435,10 +438,9 @@ margin-bottom: auto;
     font-weight: 700;
     width: 35%;
     line-height: 30px;
-    margin-bottom: 93px;
+    margin-bottom: 90px;
 }
 .hero__btn {
-    padding-left: 10px;
     background-color: var(--main-color);
     font-weight: 700;
     border: 3px solid var(--main-color);
