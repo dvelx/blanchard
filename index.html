@@ -201,7 +201,7 @@
                         <label for="select-custom-galery" class="select-galery-label" >
                             Фильтровать по:
                         </label>
-                        <select name="select-galery" id="select-custom-galery" class="galery__select" aria-placeholder="Автор">
+                        <select name="select-galery" id="select-custom-galery" class="galery__select" >
                             <!-- <option value="">Автор</option> -->
                             <!-- <option value="">Направление</option>
                             <option value="">Техника</option> -->
@@ -210,11 +210,10 @@
                         <script>
                             const element = document.querySelector('#select-custom-galery');
                             const choices = new Choices(element, {
-                                choices: [{value:'1', label: 'Направление'},{value:'2', label:'Техника'}],
+                                choices: [{value:'1', label: 'Автор'},{value:'2', label: 'Направление'},{value:'3', label:'Техника'}],
                                 position: 'bottom',
+                                maxItemCount: -1,
                                 searchEnabled: false,
-                                placeholder: true,
-                                placeholderValue: "Автор",
                                 itemSelectText: '',
                             });
                         </script>
@@ -438,39 +437,36 @@
                                 <a href="#" class="item_linkName">
                                     C 1400 по 1499 гг.
                                 </a>
-                                <a href="" class="accordion__img">
-                                    <img src="./images/expand.svg" alt="Развернуть вопрос" title="Развернуть вопрос" >
-                                </a>
                             </h3>
                             <div class="accordion__description accordion__description-block">
                               <p>   
-                                Бенедетто ди Биндо
-                                Бергоньоне, Амброджо
-                                Биссоло, Франческо
-                                Больтраффио, Джованни
-                                Бонсиньори, Франческо
-                                Боттичини, Рафаэлло
-                                Брамантино
-                                Бреа, Людовико
+                                Бенедетто ди Биндо <br>
+                                Бергоньоне, Амброджо <br>
+                                Биссоло, Франческо <br>
+                                Больтраффио, Джованни <br>
+                                Бонсиньори, Франческо <br>
+                                Боттичини, Рафаэлло <br>
+                                Брамантино <br>
+                                Бреа, Людовико <br>
                                 Бьяджо д’Антонио Туччи    
                               </p>
                               <p>
-                                Веккьетта
-                                Андреа Верроккьо
-                                <a href="#" title="Доменико Гирландайо">Доменико Гирландайо</a> 
-                                Беноццо Гоццоли
-                                Граначчи, Франческо
-                                Грегорио ди Чекко
-                                Джованни да Удине
-                                Джованни ди Паоло
+                                Веккьетта <br>
+                                Андреа Верроккьо <br>
+                                <a href="#" title="Доменико Гирландайо">Доменико Гирландайо</a> <br>
+                                Беноццо Гоццоли <br>
+                                Граначчи, Франческо <br>
+                                Грегорио ди Чекко <br>
+                                Джованни да Удине <br>
+                                Джованни ди Паоло <br>
                                 Джорджоне
                               </p>
                               <p>
-                                Парентино, Бернардо
-                                Пезеллино
-                                Пьетро Перуджино
-                                Перуцци, Бальдассаре
-                                Пизанелло
+                                Парентино, Бернардо <br>
+                                Пезеллино <br>
+                                Пьетро Перуджино <br>
+                                Перуцци, Бальдассаре <br>
+                                Пизанелло <br>
                                 Пинтуриккьо
                               </p>
                             </div>
@@ -478,9 +474,7 @@
                                 <a href="#" class="item_linkName">
                                     C 1500 по 1599 гг.
                                 </a>
-                                <a href="" class="accordion__img">
-                                    <img src="./images/expand.svg" alt="Развернуть вопрос" title="Развернуть вопрос" >
-                                </a>
+                                
                             </h3>
                             <div>
                               <p class="accordion__description">   
@@ -491,9 +485,7 @@
                                 <a href="#" class="item_linkName">
                                     C 1600 по 1699 гг.
                                 </a>
-                                <a href="" class="accordion__img">
-                                    <img src="./images/expand.svg" alt="Развернуть вопрос" title="Развернуть вопрос" >
-                                </a>
+                                
                             </h3>
                             <div>
                               <p class="accordion__description">   
@@ -504,9 +496,7 @@
                                 <a href="#" class="item_linkName">
                                     C 1700 по 1799 гг.
                                 </a>
-                                <a href="" class="accordion__img">
-                                    <img src="./images/expand.svg" alt="Развернуть вопрос" title="Развернуть вопрос" >
-                                </a>
+                                
                             </h3>
                             <div>
                               <p class="accordion__description">   
@@ -517,9 +507,7 @@
                                 <a href="#" class="item_linkName">
                                     C 1800 по 1899 гг.
                                 </a>
-                                <a href="" class="accordion__img">
-                                    <img src="./images/expand.svg" alt="Развернуть вопрос" title="Развернуть вопрос" >
-                                </a>
+                                
                             </h3>
                             <div>
                               <p class="accordion__description">   
@@ -530,9 +518,7 @@
                                 <a href="#" class="item_linkName">
                                     C 1900 по 1999 гг.
                                 </a>
-                                <a href="" class="accordion__img">
-                                    <img src="./images/expand.svg" alt="Развернуть вопрос" title="Развернуть вопрос" >
-                                </a>
+                                
                             </h3>
                             <div>
                               <p class="accordion__description">   

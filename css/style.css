@@ -469,7 +469,7 @@ margin-bottom: auto;
 }
 .galery__container {
     display: flex;
-    padding-bottom: 79px ;
+    padding-bottom: 76px ;
 }
 .galery__header {
     display: flex;
@@ -634,26 +634,24 @@ margin-bottom: auto;
 /* CATALOG */
 
 .catalog {
-    padding-top: 89px;
+    padding-top: 85px;
     color: black;
 }
-.catalog__container {
-    padding-left: 17px;
-}
+
 .catalog a{
     color: var(--active-color);
 }
 .heading__block {
     display: flex;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 }
 .heading {
     font-size: 48px;
-    margin-right: 36px;
+    margin-right: 39px;
 }
 .heading__country {
-    min-width: 442px;
-    min-height: 57px;
+    min-width: 431px;
+    min-height: 61px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -684,7 +682,7 @@ margin-bottom: auto;
     width: 69%;
     font-size: 16px;
     line-height: 32px;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
 }
 .catalog__accordion-block {
     display: flex;
@@ -720,18 +718,50 @@ margin-right: 50px;
 }
 .accordion__item {
     width: 100%;
-    height: 110px;
+    height: 112px;
     display: flex !important;
     align-items: center !important;
     background-color: white !important;
     color: black !important;
 }
 
-.ui-state-active .ui-icon,
+
 .ui-icon {
-    display: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
 }
 
+
+.ui-state-active .ui-icon {
+    background-image: url('../images/_.png');
+    transform: rotateX(180deg);
+    transition:  .5s cubic-bezier(.45,.02,.53,.99);
+}
+.ui-state-active:hover .ui-icon {
+    background-image: url('../images/+hover.png');
+    
+    transition:  .5s cubic-bezier(.45,.02,.53,.99);
+}
+
+.ui-state-default .ui-icon {
+    background-image: url('../images/+.png');
+    transition:  1s cubic-bezier(.45,.02,.53,.99);
+}
+.ui-state-default:hover .ui-icon {
+    background-image: url('../images/+hover.png');
+    
+    transition:  1s cubic-bezier(.45,.02,.53,.99);
+}
+.ui-icon-plus {
+    background-image: url('../images/+.png');
+    background-position: 0 0 ;
+}
+.ui-icon-minus {
+    background-image: url('../images/_.png');
+    background-position: 0 0;
+}
 
 .ui-accordion .ui-accordion-header {
     padding: 0;
@@ -760,7 +790,7 @@ margin-right: 50px;
     padding: 0;
 }
 .ui-accordion .ui-accordion-content {
-    padding-top: 27px;
+    padding-top: 28px;
 }
 .ui-widget-content {
     border-top: 1px solid var(--main-color);
@@ -776,19 +806,17 @@ margin-right: 50px;
     color: black !important;
 }
 
-.accordion__img {
-    margin-left: auto;
-}
 .accordion__description {
+    font-weight: 400;
     line-height: 32px;
     font-size: 16px;
 }
 .accordion__description-block {
     display: flex;
-    
 }
-.accordion__description-block p:not(:last-child) {
-    margin-right: 50px;
+.accordion__description-block p  {
+    max-width: 30%;
+    margin-right: 80px;
 }
 .item_linkName {
     font-size: 24px;
@@ -797,7 +825,7 @@ margin-right: 50px;
 /* EVENT */
 
 .event {
-    margin-top: 127px;
+    padding-top: 85px;
     color: black;
 }
 .event__heading {
@@ -1118,63 +1146,63 @@ align-items: center;
 }
 
 .projects1 {
-background-image: url(../images/project-1.png);
+    background-image: url(../images/project-1.png);
 }
 .projects1:hover {
     background-image: url(../images/project-2-color.png);
 }
 
 .projects2 {
-background-image: url(../images/project-2.png);
+    background-image: url(../images/project-2.png);
 }
 .projects2:hover {
-background-image: url(../images/project-3-color.png);
+    background-image: url(../images/project-3-color.png);
 }
 
 .projects3 {
-background-image: url(../images/project-3.png);
+    background-image: url(../images/project-3.png);
 }
 .projects3:hover {
-background-image: url(../images/project-1-color.png);
+    background-image: url(../images/project-1-color.png);
 }
   
 .projects4 {
-background-image: url(../images/project-4.png);
+    background-image: url(../images/project-4.png);
 }
 .projects4:hover {
     background-image: url(../images/project-4-color.png);
 }
 
 .projects5 {
-background-image: url(../images/project-5.png);
+    background-image: url(../images/project-5.png);
 }
 .projects5:hover {
     background-image: url(../images/project-7-color.png);
 }
 
 .projects6 {
-background-image: url(../images/project-6.png);
+    background-image: url(../images/project-6.png);
 }
 .projects6:hover {
     background-image: url(../images/project-5-color.png);
 }
 
 .projects7 {
-background-image: url(../images/project-7.png);
+    background-image: url(../images/project-7.png);
 }
 .projects7:hover {
     background-image: url(../images/project-8-color.png);
 }
 
 .projects8 {
-background-image: url(../images/project-8.png);
+    background-image: url(../images/project-8.png);
 }
 .projects8:hover {
     background-image: url(../images/project-6-color.png);
 }
 
 .projects9 {
-background-image: url(../images/project-9.png);
+    background-image: url(../images/project-9.png);
 }
 .projects9:hover {
     background-image: url(../images/project-9-color.png);
