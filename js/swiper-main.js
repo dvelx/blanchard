@@ -1,10 +1,20 @@
 var hero_swiper = new Swiper('#hero_swiper', {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
+
+
+    
+    fadeEffect: {
+        crossFade: true
+      },
 
     autoplay: {
         delay: 6000,
-        disableOnInteraction: false,
     },
+
+    effect: 'fade'
+    
+
+    
 });
 
 
@@ -21,10 +31,10 @@ var galery_swiper = new Swiper('#galery_swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
 
     pagination: {
         el: '.swiper-pagination',

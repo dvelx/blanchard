@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
             dropDown = document.querySelector(`[data-target="${path}"]`);
 
-            document.querySelectorAll('.menu__dropdownContent').forEach(function(tabContent) {
+            document.querySelectorAll('.menu__dropdown-content').forEach(function(tabContent) {
                 tabContent.classList.remove('show')
             })
             document.querySelector(`[data-target="${path}"]`).classList.add('show');
