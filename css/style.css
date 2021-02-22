@@ -937,94 +937,47 @@ margin-right: 61px;
     margin-bottom: 35px;
 }
 
-.label1,
-.label2,
-.label3,
-.label4,
-.label5,
-.label6,
-.label7,
-.label8,
-.label9,
-.label10,
-.label11 {
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    padding-left: 25px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-.label12 {
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    padding-left: 25px;
-    cursor: pointer;
-}
-#check1,
-#check2,
-#check3,
-#check4,
-#check5,
-#check6,
-#check7,
-#check8,
-#check9,
-#check10,
-#check11,
-#check12 {
-    display: none;
-}
-.checbox-span {
+.custom-checkbox {
     position: absolute;
-    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    user-select: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
     width: 12px;
     height: 12px;
-    border: 1px solid #FFFFFF;
-    transition: opacity, border .3s ease-in-out;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid white;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
 }
-
-.checbox-span::before {
-    content: '\25CF';
-    font-size: 13px;
-    color: var(--main-color);
-    position: absolute;
-    text-align: center;
-    vertical-align: center;
-    width: 10px;
-    height: 10px;
-    top: -2px;
-    left: -2px;
-    opacity: 0;
-    border: 1px solid var(--main-color);
-    
+.custom-checkbox:checked+label::before{
+    background-image: url('../images/checkbox.svg');
+    border-color: var(--hoverone-color);
 }
-#check1:checked + .checbox-span::before,
-#check2:checked + .checbox-span::before,
-#check3:checked + .checbox-span::before,
-#check4:checked + .checbox-span::before,
-#check5:checked + .checbox-span::before,
-#check6:checked + .checbox-span::before,
-#check7:checked + .checbox-span::before,
-#check8:checked + .checbox-span::before,
-#check9:checked + .checbox-span::before,
-#check10:checked + .checbox-span::before,
-#check11:checked + .checbox-span::before,
-#check12:checked + .checbox-span::before {
-    opacity: 1;
+.custom-checkbox:checked+label{
+    color: var(--hoverone-color);
+}
+label {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 
 
-.publication__price {
-}
+
 
 /* /////// */
 
