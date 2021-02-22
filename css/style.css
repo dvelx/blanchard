@@ -460,34 +460,34 @@ margin-bottom: auto;
 }
 
 
-/* GALERY */
+/* gallery */
 
-.galery {
+.gallery {
     background: url('../images/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png') center/cover no-repeat;
     width: 100%;
     padding-top: 85px;
 }
-.galery__container {
+.gallery__container {
     display: flex;
     padding-bottom: 76px ;
 }
-.galery__header {
+.gallery__header {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     width: 26%;
     margin-right: 52px;
 }
-.galery__choices {
+.gallery__choices {
     display: flex;
     flex-direction: column;
 }
 
-.galery__head {
+.gallery__head {
     font-size: 48px;
     margin-bottom: 28px;
 }
-.select-galery-label {
+.select-gallery-label {
     font-weight: 600;
     font-size: 16px;
     margin-bottom: 19px;
@@ -546,15 +546,15 @@ margin-bottom: auto;
 }
 
 
-.galery__infoDescription {
+.gallery__infoDescription {
     font-weight: 600;
     line-height: 32px;
     font-size: 16px;
 }
-.galery__infoDescription a{
+.gallery__infoDescription a{
     color: var(--hoverone-color);
 }
-.galery__select {
+.gallery__select {
     margin-top: 20px;
     color: #FFFFFF;
     width: 400px;
@@ -563,14 +563,14 @@ margin-bottom: auto;
     border: 1px solid #FFFFFF;
     border-radius: 6px;
 }
-.galery__rowItem {
+.gallery__rowItem {
     display: flex;
     justify-content: space-between;
 }
-.galery__rowItem:not(:last-child) {
+.gallery__rowItem:not(:last-child) {
     margin-bottom: 46px;
 }
-.galery__item:not(:nth-child(3n+3)) {
+.gallery__item:not(:nth-child(3n+3)) {
     margin-right: 50px;
 }
 
@@ -791,6 +791,7 @@ margin-right: 50px;
 }
 .ui-accordion .ui-accordion-content {
     padding-top: 28px;
+    padding-bottom: 34px;
 }
 .ui-widget-content {
     border-top: 1px solid var(--main-color);
@@ -826,12 +827,13 @@ margin-right: 50px;
 
 .event {
     padding-top: 85px;
+    padding-bottom: 79px;
     color: black;
 }
 .event__heading {
     font-size: 48px;
 }
-.event__itemRow {
+.event__item-row {
     margin-top: 22px;
     display: flex;
     justify-content: space-between;
@@ -843,35 +845,38 @@ margin-right: 50px;
     height: 700px;
     border: 1px solid #CACACA;
 }
+.event__image {
+    margin-bottom: 15px;
+
+}
 
 .event__item span {
-    margin-top: 15px;
-    margin-left: auto;
     font-size: 12px;
     text-align: right;
     color: #999999;
-    padding-right: 20px;
-    width: 250px;
+    padding-right: 19px;
 }
-.event__itemWrap {
-    display: flex;
-    flex-direction: column;
-    padding: 11px 42px 50px 50px;
+.event__item-wrap {
+    height: 100%;
+    padding: 11px 42px 41px 50px;
 }
-.event__itemWrap h3 {
+.event__item-wrap h3 {
     font-weight: 600;
     font-size: 24px;
 }
-.event__itemWrap p {
+.event__item-wrap p {
     margin-top: 10px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 32px;
 }
-.event__itemWrap a {
-    color: black;
-    margin-top: auto;
+.event__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 }
-.event__btnBlock {
+.event__btn--block {
     display: flex;
     justify-content: center;
 }
@@ -882,11 +887,11 @@ margin-right: 50px;
     color: var(--main-color);
     margin: 50px auto 0 auto;
 }
-.event__itemRow-all {
+.event__item-row-all {
     display: none;
     
 }
-.event__itemRow-all.is-active {
+.event__item-row-all.is-active {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
@@ -901,7 +906,6 @@ margin-right: 50px;
 
 .publication {
     display: flex;
-    margin-top: 115px;
     width: 100%;
     background: url('../images/birmingham-museums-trust-MK_98NuC4-4-unsplash4.png') center/cover no-repeat;
 }
@@ -909,27 +913,31 @@ margin-right: 50px;
     display: flex;
 }
 .publication__heading {
+    font-weight: 400;
     font-size: 48px;
+    margin-bottom: 30px;
 } 
 .publication__firstCol {
-    width: 400px;
+margin-right: 61px;
 }
 
 .publication__firstCol,
 .publication__secondCol {
-    margin-top: 85px;
-    margin-bottom: 80px;  /* не понимаю почему не работает отступ снизу */
+    padding-top: 85px;
+    padding-bottom: 80px;  /* не понимаю почему не работает отступ снизу */
 }
 
 /* checkbox */
 .checkbox__box h3 {
     font-weight: 700;
     font-size: 16px;
+    margin-bottom: 15px;
+    
 }
 .checkbox__box {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .label1,
@@ -942,7 +950,17 @@ margin-right: 50px;
 .label8,
 .label9,
 .label10,
-.label11,
+.label11 {
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
 .label12 {
     font-size: 16px;
     font-weight: 400;
@@ -951,7 +969,6 @@ margin-right: 50px;
     align-items: center;
     vertical-align: middle;
     padding-left: 25px;
-    margin-top: 14px;
     cursor: pointer;
 }
 #check1,
@@ -971,23 +988,23 @@ margin-right: 50px;
 .checbox-span {
     position: absolute;
     left: 0;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 1px solid #FFFFFF;
     transition: opacity, border .3s ease-in-out;
 }
 
 .checbox-span::before {
     content: '\25CF';
-    font-size: 15px;
+    font-size: 13px;
     color: var(--main-color);
     position: absolute;
     text-align: center;
-    vertical-align: top;
-    width: 13px;
-    height: 13px;
-    top: -1px;
-    left: -1px;
+    vertical-align: center;
+    width: 10px;
+    height: 10px;
+    top: -2px;
+    left: -2px;
     opacity: 0;
     border: 1px solid var(--main-color);
     
@@ -1010,14 +1027,12 @@ margin-right: 50px;
 
 
 .publication__price {
-    margin-top: 47px;
 }
 
 /* /////// */
 
 .publication__secondCol {
-    margin-top: 115px;
-    width: 1150px;
+    max-width: 1150px;
     margin-left: 50px;
 }
 

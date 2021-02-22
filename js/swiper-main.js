@@ -1,25 +1,18 @@
 var hero_swiper = new Swiper('#hero_swiper', {
-    slidesPerView: 'auto',
-
-
-    
+    slidesPerView: 'auto',    
     fadeEffect: {
         crossFade: true
       },
-
     autoplay: {
         delay: 6000,
     },
-
-    effect: 'fade'
-    
-
-    
+    effect: 'fade',
+    speed: 3000,
 });
 
 
 
-var galery_swiper = new Swiper('#galery_swiper', {
+var gallery_swiper = new Swiper('#gallery_swiper', {
     // Optional parameters 
 
     slideClass: ('swiper-slide'),
@@ -51,7 +44,7 @@ var publication_swiper = new Swiper('#publication_swiper', {
     slideClass: ('swiper-slide'),
     
     slidesPerView: 1,
-    slidesPercolumn: 2,
+    slidesPercolumn: 1,
     spaceBetween: 50,
     navigation: {
         nextEl: '.swiper-button-next',
