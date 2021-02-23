@@ -928,13 +928,13 @@ margin-right: 61px;
 .checkbox__box h3 {
     font-weight: 700;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     
 }
 .checkbox__box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 21px;
 }
 
 .custom-checkbox {
@@ -947,14 +947,14 @@ margin-right: 61px;
     align-items: center;
     justify-items: center;
     user-select: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 .custom-checkbox+label::before {
     content: '';
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 1px solid white;
@@ -964,6 +964,7 @@ margin-right: 61px;
     background-size: 50% 50%;
 }
 .custom-checkbox:checked+label::before{
+    background-position: center center;
     background-image: url('../images/checkbox.svg');
     border-color: var(--hoverone-color);
 }
@@ -974,9 +975,6 @@ label {
     font-weight: 400;
     font-size: 16px;
 }
-
-
-
 
 
 /* /////// */
@@ -1017,7 +1015,6 @@ label {
     height: 40px;
     border: 1px solid rgba(255, 255, 255, .5);
     border-radius: 5px;
-    margin-top: 13px;
     
 }
 .input-1,
@@ -1048,30 +1045,7 @@ label {
     line-height: 32px;
     width: 66%;
 }
-.project__tooltip {
-    display: inline;
-}
-.tooltip_popup {
-    display: none;
-}
-.tooltip_maker {
-    display: inline;
-}
 
-
-.project__tooltip:hover::after {
-  display: block;
-  position: absolute;
-  justify-content: center;
-  background: #CACACA;
-  color: #ffffff;
-  content: attr(title);
-  margin-top: -80px;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 5px;
-  width: 300px;
-}
 .project__link {
     color: var(--main-color);
 }
@@ -1081,6 +1055,42 @@ label {
     font-size: 24px;
     font-weight: 600;
 }
+.project__text {
+    display: inline;
+}
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+.marker {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/tooltip-icon.svg);
+    background-position: center center;
+    cursor: pointer;
+}
+.popup {
+    position: absolute;
+    bottom: 100%;
+    left: -150px;
+    width: 300px;
+    margin-bottom: 10px;
+    background: #CACACA;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.marker:hover + .popup {
+    opacity: 1;
+}
+
+
 
 .project__swiper-btn {
     display: flex;
