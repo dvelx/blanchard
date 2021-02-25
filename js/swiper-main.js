@@ -50,10 +50,10 @@ var publication_swiper = new Swiper('#publication_swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // autoplay: {
-    //     delay: 6000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',
