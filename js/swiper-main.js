@@ -24,10 +24,10 @@ var gallery_swiper = new Swiper('#gallery_swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // autoplay: {
-    //     delay: 6000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',
