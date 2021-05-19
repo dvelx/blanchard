@@ -23,18 +23,27 @@ window.addEventListener('DOMContentLoaded', function() {
     })
 
 
-    document.querySelectorAll('.country-btn').forEach(function(language) {   //выбираем из документа нужный нам класс с forEach я еще не разобрался что это такое и как оно работает
-        language.addEventListener('click', function(event) {                //добавляем к нашему выбранному классу обработчик событий click
-            const language = event.currentTarget.dataset.language                   //создаем const для того чтобы найти наш селектор по data в случае получится что будем искать по  data-path="какое то значение"
+    const tabsHandlerElems = document.querySelectorAll('[data-tabs-handler]');
+    const tabsFieldElems = document.querySelectorAll('[data-tabs-field]');
 
-            changeLanguage = document.querySelector(`[data-target="${language}"]`);
-
-            document.querySelectorAll('.catalog__description').forEach(function(tabClick) {
-                tabClick.classList.remove('catalog__description-active')
+    for (const tab of tabsHandlerElems) {
+        tab.addEventListener('click', () => {
+            tabsHandlerElems.forEach(item => {
+                if (tab === item) {
+                    item.classList.add('country-btn-active');
+                } else {
+                    item.classList.remove('country-btn-active');
+                }
             })
-            document.querySelector(`[data-target="${language}"]`).classList.add('catalog__description-active');
 
+            tabsFieldElems.forEach(item => {
+                if (item.dataset.tabsField === tab.dataset.tabsHandler) {
+                    item.classList.remove('hidden')
+                } else {
+                    item.classList.add('hidden')
+                }
+            })
         })
-    })
+    }
 
 });
