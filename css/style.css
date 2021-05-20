@@ -569,11 +569,11 @@ margin-bottom: auto;
     border: 1px solid #FFFFFF;
     border-radius: 6px;
 }
-.gallery__rowItem {
+.gallery__row-item {
     display: flex;
     justify-content: space-between;
 }
-.gallery__rowItem:not(:last-child) {
+.gallery__row-item:not(:last-child) {
     margin-bottom: 46px;
 }
 .gallery__item:not(:nth-child(3n+3)) {
@@ -581,30 +581,126 @@ margin-bottom: auto;
 }
 .gallery__item {
     position: relative;
+    width: 350px;
+    height: 350px;
+}
+.slide-1 {
+    background: url(../images/galleryimage1.png);
+}
+.slide-2 {
+    background: url(../images/galleryimage2.png);
+}
+.slide-3 {
+    background: url(../images/galleryimage3.png);
+}
+.slide-4 {
+    background: url(../images/galleryimage4.png);
+}
+.slide-5 {
+    background: url(../images/galleryimage5.png);
+}
+.slide-6 {
+    background: url(../images/galleryimage6.png);
+}
+.slide-7 {
+    background: url(../images/galleryimage7.png);
+}
+.slide-8 {
+    background: url(../images/galleryimage8.png);
+}
+.slide-9 {
+    background: url(../images/galleryimage9.png);
+}
+.slide-10 {
+    background: url(../images/galleryimage10.png);
+}
+.slide-11 {
+    background: url(../images/galleryimage11.png);
+}
+.slide-12 {
+    background: url(../images/galleryimage12.png);
+}
+.slide-13 {
+    background: url(../images/galleryimage13.png);
+}
+.slide-14 {
+    background: url(../images/galleryimage14.png);
+}
+.slide-15 {
+    background: url(../images/galleryimage15.png);
+}
+.slide-16 {
+    background: url(../images/galleryimage16.png);
+}
+.slide-17 {
+    background: url(../images/galleryimage17.png);
+}
+.slide-18 {
+    background: url(../images/galleryimage18.png);
+}
+.slide-19 {
+    background: url(../images/galleryimage19.png);
+}
+.slide-20 {
+    background: url(../images/galleryimage20.png);
+}
+.slide-21 {
+    background: url(../images/galleryimage21.png);
+}
+.slide-22 {
+    background: url(../images/galleryimage22.png);
+}
+.slide-23 {
+    background: url(../images/galleryimage23.png);
+}
+.slide-15 {
+    background: url(../images/galleryimage15.png);
+}
+.slide-24 {
+    background: url(../images/galleryimage24.png);
+}
+.slide-25 {
+    background: url(../images/galleryimage25.png);
+}
+.slide-26 {
+    background: url(../images/galleryimage26.png);
+}
+.slide-27 {
+    background: url(../images/galleryimage27.png);
+}
+.slide-28 {
+    background: url(../images/galleryimage28.png);
+}
+.slide-29 {
+    background: url(../images/galleryimage29.png);
+}
+.slide-30 {
+    background: url(../images/galleryimage30.png);
 }
 
 
 .gallery__item::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    background-color: var(--hoverone-color);
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    background: url(../images/Group12.png) center no-repeat;
     opacity: 0;
+    transition: opacity 0.3s;
+}
+.gallery__item:hover::after {
+    opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
-.gallery__item::before {
+
+/* .gallery__item::before {
     content: "";
     position: absolute;
-    left: 50%;
-    top: 50%;
+    width: 50px;
+    height: 50px;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 310px;
-    height: 310px;
     background-image: url(../images/Group12.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -612,14 +708,10 @@ margin-bottom: auto;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
-.galery__item:hover::before {
+.gallery__item:hover::before {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-}
-.gallery__item:hover::after {
-    opacity: 0.4;
-    transition: opacity 0.2s ease-in-out;
-}
+} */
 
 
 .swiper-btns{
