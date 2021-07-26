@@ -695,23 +695,21 @@ margin-bottom: auto;
     transition: opacity 0.2s ease-in-out;
 }
 
-/* .gallery__item::before {
-    content: "";
+.gallery__item::after {
+    left: 25px;
+    right: 25px;
+    top: 25px;
+    bottom: 25px;
     position: absolute;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    background-image: url(../images/Group12.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.3s;
 }
-.gallery__item:hover::before {
+
+.gallery__item:hover::after {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-} */
+}
 
 
 .swiper-btns{
@@ -759,6 +757,8 @@ margin-bottom: auto;
 }
 
 .swiper-pagination{
+    width: 50px;
+    height: 30px;
     top: 25px;
     left: 50px;
     text-align: left;

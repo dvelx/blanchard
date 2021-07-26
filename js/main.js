@@ -11,16 +11,16 @@ window.addEventListener('DOMContentLoaded', function() {
 
             document.querySelectorAll('.menu__dropdown-content').forEach(function(tabContent) {
                 tabContent.classList.remove('show')
-            })
+            });
             document.querySelector(`[data-target="${path}"]`).classList.add('show');
 
             if (dropDown.classList.contains('show')) {
                 document.querySelector(`[data-path="${path}"]`).addEventListener('click', function() {
                     dropDown.classList.toggle('show')
-                })
-            }
-        })
-    })
+                });
+            };
+        });
+    });
 
 
     const tabsHandlerElems = document.querySelectorAll('[data-tabs-handler]');
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 } else {
                     item.classList.remove('country-btn-active');
                 }
-            })
+            });
 
             tabsFieldElems.forEach(item => {
                 if (item.dataset.tabsField === tab.dataset.tabsHandler) {
@@ -42,8 +42,19 @@ window.addEventListener('DOMContentLoaded', function() {
                 } else {
                     item.classList.add('hidden')
                 }
+            });
+        });
+    };
+
+    document.querySelectorAll('.tabs-author').forEach(function(tabsAuthor) {
+        tabsAuthor.addEventListener('click', function(event) {
+            const author = event.currentTarget.dataset.author
+            
+            document.querySelectorAll('.catalog__item-image').forEach( function(authorImg) {
+                authorImg.classList.add('hidden');
             })
+            document.querySelector(`[data-author-img="${author}"]`).classList.toggle('hidden')
         })
-    }
+    })
 
 });
