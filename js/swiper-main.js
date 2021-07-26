@@ -44,7 +44,7 @@ var publication_swiper = new Swiper('#publication_swiper', {
     slideClass: ('swiper-slide'),
     
     slidesPerView: 1,
-    slidesPercolumn: 1,
+    slidesPercolumn: 3,
     spaceBetween: 50,
     navigation: {
         nextEl: '.swiper-button-next',

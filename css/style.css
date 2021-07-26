@@ -580,10 +580,10 @@ margin-bottom: auto;
     width: 350px;
     height: 350px;
 }
-.swiper-wrapper {
+.galerry__swiper-wrapper {
     width: 1150px;
 }
-.swiper-slide {
+.gallery__swiper-slide {
     flex-direction: column;
     column-count: 3;
 }
