@@ -18,15 +18,21 @@ var gallery_swiper = new Swiper('#gallery_swiper', {
     slideClass: ('swiper-slide'),
     
     slidesPerView: 3,
-    slidesPercolumn: 2,
-    spaceBetween: 30,
+    slidesPerColumn: 2,
+    spaceBetween: 50,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
+    // autoplay: {
+    //     delay: 6000,
+    // },
+
+    breakpoints: {
+        "@0.5": {
+            slidesPerView: 2,
+            spaceBetween: 35,
+        },
     },
 
     pagination: {
@@ -43,17 +49,24 @@ var publication_swiper = new Swiper('#publication_swiper', {
 
     slideClass: ('swiper-slide'),
     
-    slidesPerView: 1,
+    slidesPerView: 3,
     slidesPercolumn: 3,
     spaceBetween: 50,
+
+    breakpoints: {
+        "@0.5": {
+            slidesPerView: 2,
+            spaceBetween: 35,
+        },
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
 
     pagination: {
         el: '.swiper-pagination',
