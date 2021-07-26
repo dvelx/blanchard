@@ -128,7 +128,7 @@ input {
 .header__bottom-nav {
     background-color: rgba(0, 0, 0, .4);
 }
-.header__nav-block-mobile {
+.header__nav-block-tablet {
     display: none;
 }
 .header__nav-block {
@@ -965,7 +965,7 @@ margin-right: 50px;
 .accordion__description-block {
     display: flex;
 }
-.accordion-mobile {
+.accordion-tablet {
     display: none;
 }
 .btn-block {
@@ -1041,7 +1041,7 @@ margin-right: 50px;
     font-size: 16px;
     line-height: 32px;
 }
-.event__description-mobile {
+.event__description-tablet {
     display: none;
 }
 .event__link {
@@ -1558,7 +1558,7 @@ label {
     .header__nav-block {
         display: none;
     }
-    .header__nav-block-mobile {
+    .header__nav-block-tablet {
         display: flex;
         justify-content: space-between;
         padding: 30px 0 30px 0;
@@ -1610,7 +1610,7 @@ label {
     .accordion-desktop {
         display: none;
     }
-    .accordion-mobile {
+    .accordion-tablet {
         display: block;
     }
     
@@ -1624,7 +1624,7 @@ label {
     .event__description-desktop {
         display: none;
     }
-    .event__description-mobile {
+    .event__description-tablet {
         display: block;
         font-weight: 400;
         font-size: 16px;
@@ -1639,6 +1639,10 @@ label {
         width: 290px;
     }
 
+
+    .project__description {
+        width: 100%;
+    }
 
     .map {
         width: 487px;
