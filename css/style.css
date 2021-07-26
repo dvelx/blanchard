@@ -959,12 +959,15 @@ margin-right: 50px;
 .accordion__description-block {
     display: flex;
 }
+.accordion-mobile {
+    display: none;
+}
 .btn-block {
     display: flex;
     flex-direction: column;
    
 }
-.accordion-btn button {
+.tabs-author {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -974,6 +977,12 @@ margin-right: 50px;
     text-align: left;
     font-weight: 400;
     font-size: 16px;
+}
+.tabs-author:hover {
+    color: var(--hoverone-color);
+}
+.tabs-author:active {
+    color: var(--active-color);
 }
 
 .item_linkName {
@@ -1378,10 +1387,10 @@ label {
     background-image: url(../images/project-next.png);
 }
   
-  
+  /* CONTACTS*/
 
 .contacts__container {
-    border: 1px solid gray;
+    border-top: 1px solid gray;
 }
 
 .contacts__header {
@@ -1520,4 +1529,54 @@ label {
     height: 45px;
     width: 45px;
     margin-left: 20px;
+}
+
+
+
+/* breakpoint */
+
+
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 924px;
+        padding: 0;
+    }
+
+
+    .catalog__item-select {
+        min-width: 487px;
+    }
+
+    .catalog__accordion {
+        min-width: 487px;
+    }
+    
+    .accordion-desktop {
+        display: none;
+    }
+    .accordion-mobile {
+        display: block;
+    }
+    
+
+
+    .publication__secondCol {
+        max-width: 530px;
+    }
+
+    .content-item {
+        width: 290px;
+    }
+
+
+    .map {
+        width: 487px;
+        height: 600px;
+    }
+    .yamap {
+        width: 487px;
+    }
 }
