@@ -18,7 +18,7 @@ var gallery_swiper = new Swiper('#gallery_swiper', {
     slideClass: ('swiper-slide'),
     
     slidesPerView: 1,
-    slidesPercolumn: 2,
+    slidesPercolumn: 1,
     spaceBetween: 50,
     navigation: {
         nextEl: '.swiper-button-next',
