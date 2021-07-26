@@ -831,7 +831,7 @@ margin-bottom: auto;
     display: flex;
 }
 .catalog__item-select {
-min-width: 750px;
+width: 750px;
 margin-right: 50px;
 }
 
@@ -854,7 +854,7 @@ margin-right: 50px;
 
 
 .catalog__accordion {
-    min-width: 800px;
+    width: 800px;
 }
 .accordion__item {
     width: 100%;
@@ -1617,11 +1617,11 @@ label {
     }
 
     .catalog__item-select {
-        min-width: 487px;
+        width: 487px;
     }
 
     .catalog__accordion {
-        min-width: 487px;
+        width: 437px;
     }
     
     .accordion-desktop {
@@ -1669,6 +1669,10 @@ label {
 
     .project__description {
         width: 100%;
+    }
+
+    .project__item {
+        width: 385px;
     }
 
     .map {

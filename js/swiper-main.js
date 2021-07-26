@@ -24,9 +24,9 @@ var gallery_swiper = new Swiper('#gallery_swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // autoplay: {
-    //     delay: 6000,
-    // },
+    autoplay: {
+        delay: 6000,
+    },
 
     breakpoints: {
         "@0.5": {
@@ -63,10 +63,10 @@ var publication_swiper = new Swiper('#publication_swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // autoplay: {
-    //     delay: 6000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -89,9 +89,16 @@ var project_swiper = new Swiper('#project-swiper', {
         nextEl: '.button3-next.swiper-button-next',
         prevEl: '.button3-prev.swiper-button-prev',
     },
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
+
+    breakpoints: {
+        "@0.5": {
+            slidesPerView: 2,
+            spaceBetween: 50,
+        },
     },
 
     pagination: {
