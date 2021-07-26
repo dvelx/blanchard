@@ -572,24 +572,15 @@ margin-bottom: auto;
     border-radius: 6px;
 }
 
-.gallery__item:not(:nth-child(3n+3)) {
+/* .gallery__item:not(:nth-child(3n+3)) {
     margin-right: 50px;
-}
+} */
 .gallery__item {
     position: relative;
     width: 350px;
     height: 350px;
-}
-.galerry__swiper-wrapper {
-    width: 1150px;
-}
-.gallery__swiper-slide {
-    flex-direction: column;
-    column-count: 3;
-}
-.gallery__item:nth-child(odd) {
-    margin-bottom: 30px;
-}
+} 
+
 .slide-1 {
     background: url(../images/galleryimage1.png);
 }
