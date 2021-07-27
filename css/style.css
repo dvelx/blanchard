@@ -847,7 +847,11 @@ margin-bottom: auto;
 	width: 750px;
 	margin-right: 50px;
 }
-
+.catalog__description p {
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 16px;
+}
 
 .catalog__item-name {
     font-size: 23px;
@@ -864,6 +868,7 @@ margin-bottom: auto;
     font-size: 12px;
     color: #999999;
 }
+
 
 
 .catalog__accordion {
