@@ -1002,8 +1002,9 @@ margin-bottom: auto;
     color: var(--hoverone-color);
 }
 .tabs-author:active {
-    color: var(--active-color);
+    background-color: var(--active-color);
 }
+
 
 .item_linkName {
     font-weight: 600;
