@@ -522,6 +522,22 @@ margin-bottom: auto;
 .choices[data-type*=select-one] .choices__inner {
     padding: 0;
 }
+.choices[data-type*=select-one]:after {
+	content: '';
+	transform: rotate(45deg);
+	height: 5px;
+	width: 5px;
+	top: 30%; 
+	border-bottom: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
+.choices[data-type*=select-one].is-open:after {
+	border-bottom: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	transform: rotate(-135deg);
+	top: 60%;
+}
+
 .is-open .choices__inner {
     border-radius: 6px;
 }
@@ -529,9 +545,6 @@ margin-bottom: auto;
     background-color: transparent;
     border: 1px solid #999999;
     top: 100%;
-    /* margin-top: -1px; */
-    /* border-bottom-left-radius: 2.5px;
-    border-bottom-right-radius: 2.5px; */
     border-radius: 6px;
 }
 .choices__placeholder {
@@ -582,7 +595,7 @@ margin-bottom: auto;
 } 
 .galerry__swiper-wrapper {
     width: 1150px;
-    height: 900px;
+    height: 750px;
 }
 
 .slide-1 {
@@ -716,7 +729,7 @@ margin-bottom: auto;
 .swiper-btns{
     display: flex;
     flex-flow: row wrap;
-    width: 134px;
+    width: 145px;
     justify-content: space-between;
     padding-top: 41px;
     padding-bottom: 33px;
@@ -758,7 +771,7 @@ margin-bottom: auto;
 }
 
 .swiper-pagination{
-    width: 50px;
+    width: 60px;
     height: 30px;
     top: 25px;
     left: 50px;
@@ -831,8 +844,8 @@ margin-bottom: auto;
     display: flex;
 }
 .catalog__item-select {
-width: 750px;
-margin-right: 50px;
+	width: 750px;
+	margin-right: 50px;
 }
 
 
@@ -960,13 +973,14 @@ margin-right: 50px;
 .accordion__description-block {
     display: flex;
 }
-.accordion-tablet {
-    display: none;
-}
+
 .btn-block {
-    display: flex;
-    flex-direction: column;
-   
+		-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+.btn-block li {
+	margin-right: 30px;
 }
 .tabs-author {
     background-color: transparent;
@@ -1147,6 +1161,7 @@ margin-right: 61px;
 .custom-checkbox:checked+label{
     color: var(--hoverone-color);
 }
+
 label {
     font-weight: 400;
     font-size: 16px;
@@ -1624,12 +1639,7 @@ label {
         width: 437px;
     }
     
-    .accordion-desktop {
-        display: none;
-    }
-    .accordion-tablet {
-        display: block;
-    }
+    
 
 
     
