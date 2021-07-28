@@ -801,30 +801,32 @@ margin-bottom: auto;
     margin-right: 39px;
 }
 .heading__country {
-    min-width: 431px;
-    min-height: 61px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
     
 .country-btn {
-    width: 72.67px;
+    width: 66px;
+    height: 66px;
     background-color: transparent;
     border: none;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
 }
-.country-btn img  {
+.country-btn:not(:last-child) {
+    margin-right: 50px;
+}
+
+.country-btn svg{
     border-radius: 50%;
     transition: box-shadow .5s cubic-bezier(.45,.02,.53,.99);
 }
-.country-btn:hover img {
+.country-btn:hover svg{
     box-shadow: 0 0 15px var(--hoverone-color);
     transition: box-shadow .5s cubic-bezier(.45,.02,.53,.99);
 }
-.country-btn:active img {
+.country-btn:active svg {
     border: 2px solid var(--active-color);
 }
 .country-btn-active {
