@@ -474,7 +474,7 @@ margin-bottom: auto;
 }
 .gallery__container {
     display: flex;
-    padding-bottom: 76px ;
+    padding-bottom: 79px ;
 }
 .gallery__header {
     display: flex;
@@ -794,11 +794,11 @@ margin-bottom: auto;
 }
 .heading__block {
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 .heading {
     font-size: 48px;
-    margin-right: 39px;
+    margin-right: 30px;
 }
 .heading__country {
     display: flex;
@@ -806,6 +806,7 @@ margin-bottom: auto;
 }
     
 .country-btn {
+    margin-right: 30px;
     width: 66px;
     height: 66px;
     background-color: transparent;
@@ -818,15 +819,15 @@ margin-bottom: auto;
     margin-right: 50px;
 }
 
-.country-btn svg{
+.country-btn img {
     border-radius: 50%;
     transition: box-shadow .5s cubic-bezier(.45,.02,.53,.99);
 }
-.country-btn:hover svg{
+.country-btn:hover img{
     box-shadow: 0 0 15px var(--hoverone-color);
     transition: box-shadow .5s cubic-bezier(.45,.02,.53,.99);
 }
-.country-btn:active svg {
+.country-btn:active img {
     border: 2px solid var(--active-color);
 }
 .country-btn-active {
@@ -840,7 +841,7 @@ margin-bottom: auto;
     width: 69%;
     font-size: 16px;
     line-height: 32px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 }
 .catalog__accordion-block {
     display: flex;
@@ -888,7 +889,7 @@ margin-bottom: auto;
 
 .ui-accordion .ui-accordion-header,
 .accordion__item {
-    padding: 36px 0 43px 0;
+    padding: 38px 0 43px 0;
 }
 
 
@@ -948,15 +949,20 @@ margin-bottom: auto;
 .ui-state-active { 
     border-bottom: 1px solid #CACACA;
 }
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+    border-radius: 0px;
+ }
+
 
 .ui-accordion .ui-accordion-content {
     padding: 0;
 }
 .ui-accordion .ui-accordion-content {
-    padding-top: 33px;
-    padding-bottom: 20px;
-    padding-right: 110px;
-    justify-content: space-between;
+    height: 340px !important;
+    padding-top: 25px;
 }
 .ui-widget-content {
     border-top: 1px solid var(--main-color);
@@ -987,13 +993,12 @@ margin-bottom: auto;
     column-count: 3;
 }
 .btn-block li {
-	margin-right: 30px;
+	margin-right: 46px;
 }
 .tabs-author {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin-bottom: 15px;
     cursor: pointer;
     color: black;
     text-align: left;
