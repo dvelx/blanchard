@@ -833,11 +833,19 @@ input {
     display: flex;
     align-items: center;
 }
-    
-.country-btn {
-    margin-right: 30px;
+.country-item {
+    display: flex;
     width: 66px;
     height: 66px;
+    align-items: center;
+    justify-content: center;
+}
+.country-item:not(:first-child) {
+    margin-left: 30px;
+}
+.country-btn {
+    width: 46px;
+    height: 46px;
     background-color: transparent;
     border: none;
     border-radius: 50%;
@@ -848,21 +856,39 @@ input {
     margin-right: 50px;
 }
 
-.country-btn img {
+.country-btn {
     border-radius: 50%;
     transition: box-shadow .5s cubic-bezier(.45,.02,.53,.99);
 }
-.country-btn:hover img{
+.country-btn:hover{
     box-shadow: 0 0 15px var(--hoverone-color);
     transition: box-shadow .5s cubic-bezier(.45,.02,.53,.99);
 }
-.country-btn:active img {
+.country-btn:active  {
     border: 2px solid var(--active-color);
+}
+.france {
+    background: url('../images/country1.svg') center/cover no-repeat;
+}
+.germany {
+    background: url('../images/country2.svg') center/cover no-repeat;
+}
+.italy {
+    background: url('../images/country3.svg') center/cover no-repeat;
+}
+.russian {
+    background: url('../images/country4.svg') center/cover no-repeat;
+}
+.belgian {
+    background: url('../images/country5.svg') center/cover no-repeat;
 }
 .country-btn-active {
     border: 2px solid var(--main-color);
-    padding: 10px;
+    background-size: 46px 46px;
+    height: 66px;
+    width: 66px;
 }
+
 
 
 
