@@ -969,7 +969,6 @@ input {
 }
 .ui-state-active:hover .ui-icon {
     background-image: url('../images/+hover.png');
-    
     transition:  .5s cubic-bezier(.45,.02,.53,.99);
 }
 
@@ -1022,8 +1021,7 @@ input {
     padding: 0;
 }
 .ui-accordion .ui-accordion-content {
-    height: 340px !important;
-    padding-top: 25px;
+    padding: 25px 0 61px 0;
 }
 .ui-widget-content {
     border-top: 1px solid var(--main-color);
