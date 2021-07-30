@@ -553,17 +553,23 @@ input {
 }
 .choices[data-type*=select-one]:after {
 	content: '';
-	transform: rotate(45deg);
-	height: 5px;
-	width: 5px;
-	top: 30%; 
-	border-bottom: 1px solid #ffffff;
-	border-right: 1px solid #ffffff;
+	transform: rotate(-45deg);
+	height: 6px;
+	width: 6px;
+	top: 40%; 
+    border-width: 0 0 1px 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    right: 15px;
+	/* border-bottom: 1px solid #ffffff;
+	border-right: 1px solid #ffffff; */
+    
 }
 .choices[data-type*=select-one].is-open:after {
-	border-bottom: 1px solid #ffffff;
-	border-right: 1px solid #ffffff;
-	transform: rotate(-135deg);
+	border-width: 0 0 1px 1px;
+    border-color: #ffffff;
+    border-style: solid;
+	transform: rotate(135deg);
 	top: 60%;
 }
 
@@ -758,7 +764,7 @@ input {
 .swiper-btns{
     display: flex;
     flex-flow: row wrap;
-    width: 145px;
+    width: 160px;
     justify-content: space-between;
     padding-top: 41px;
     padding-bottom: 33px;
@@ -804,7 +810,7 @@ input {
     height: 30px;
     top: 25px;
     left: 50px;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
