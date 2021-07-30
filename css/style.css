@@ -146,10 +146,17 @@ input {
 .header__nav-item:not(:last-child) {
     margin-right: 66px;
 }
-
+.header__nav-anchor {
+    font-weight: 600;
+}
+.header__nav-anchor:focus {
+    background-color: var(--active-color);
+    outline: 4px solid var(--active-color);
+}
 .header__nav-anchor:active {
     color: var(--active-color);
 }
+
 .header__nav-anchor {
     transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
@@ -157,6 +164,7 @@ input {
     color: var(--hoverone-color);
     transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
+
 .header__enter{
     transition: color .5s cubic-bezier(.45,.02,.53,.99);
 }
@@ -171,6 +179,10 @@ input {
 .header__enter:hover svg path {
     fill: var(--hoverone-color);
     transition: fill .5s cubic-bezier(.45,.02,.53,.99);
+}
+.header__enter:focus {
+    background-color: var(--active-color);
+    outline: 4px solid var(--active-color);
 }
 
 
@@ -198,7 +210,6 @@ input {
     border: none;
     background-color: transparent;
     color: white;
-    outline: var(--active-color);
     transition: color .5s cubic-bezier(.45,.02,.53,.99);
     
 }
@@ -217,14 +228,14 @@ input {
     border-left: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
     transform: rotate(-45deg);
-    transition: border-left .1s ease;
-    transition: border-bottom .1s ease;
+    transition: border .5s cubic-bezier(.45,.02,.53,.99);
+    transition: border .5s cubic-bezier(.45,.02,.53,.99);
 }
 .menu__item:hover:after {
     border-left: 1px solid var(--active-color);
     border-bottom: 1px solid var(--active-color);
-    transition: border-left .1s ease;
-    transition: border-bottom .1s ease;
+    transition: border .5s cubic-bezier(.45,.02,.53,.99);
+    transition: border .5s cubic-bezier(.45,.02,.53,.99);
 }
 
 .menu__item:hover {
@@ -241,6 +252,11 @@ input {
 }
 .menu__item:active {
     color: var(--main-color);
+}
+.menu__item:focus
+ {
+    background-color: var(--active-color);
+    outline: 4px solid var(--active-color);
 }
 
 .menu__dropdown-content {
@@ -283,6 +299,7 @@ input {
     padding: 10px 0 12px 12px;
     border: 2px solid var(--main-color);
 }
+
 .menu__dropdown-item:active {
     border: 2px solid var(--main-color);
     border: 2px solid #D1A9F0;
@@ -300,7 +317,10 @@ input {
     border-radius: 7px;
     left: 0;
     right: 0;
-    /* height: 22px; */
+}
+
+.simplebar-content-wrapper {
+    padding-bottom: 40px;
 }
 .simplebar-scrollbar.simplebar-visible:before{
     opacity: 1;
@@ -311,17 +331,17 @@ input {
     bottom: 0;
 }
 .simplebar-track {
-z-index: 1;
-position: absolute;
-right: 19px;
-bottom: 0;
-pointer-events: none;
-overflow: hidden;
-background-color: #000000;
-width: 2px;
-height: 220px;
-margin-top: auto;
-margin-bottom: auto;
+    z-index: 1;
+    position: absolute;
+    right: 19px;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background-color: #000000;
+    width: 2px;
+    height: 220px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .simplebar-visible {
     height: 300px;
@@ -329,6 +349,8 @@ margin-bottom: auto;
 .simplebar-track.simplebar-vertical {
     width: 2px;
 }
+
+
 .nav__bottom-search {
     display: flex;
     align-items: center;
@@ -356,6 +378,9 @@ margin-bottom: auto;
     color: #FFFFFF;
     font-size: 18px;
 }
+.search-input:hover::placeholder  {
+    color: transparent;
+}
 
 .nav__bottom-search:hover input {
     border-bottom: 1px solid var(--hoverone-color);
@@ -371,6 +396,7 @@ margin-bottom: auto;
 .nav__bottom-search:active svg path {
     fill: var(--hoverone-color);
 }
+
 
 
 
@@ -442,6 +468,9 @@ margin-bottom: auto;
 .hero__btn:active {
     border: 3px solid #D1A9F0;
     background-color: var(--active-color);
+}
+.hero__btn:focus {
+    border: 4px solid var(--hoverone-color);
 }
 
 /* US */
@@ -1005,12 +1034,16 @@ margin-bottom: auto;
     font-weight: 400;
     font-size: 16px;
 }
+
 .tabs-author:hover {
     color: var(--hoverone-color);
+    border-bottom:1px solid var(--hoverone-color);
 }
+
 .tabs-author:active {
-    background-color: var(--active-color);
+    color: var(--active-color);
 }
+
 
 
 .item_linkName {
